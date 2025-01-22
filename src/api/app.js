@@ -6,31 +6,30 @@ const { user } = useTelegram()
 const MY_ID = user?.id ?? 4252
 
 export async function fetchTasks() {
-  const { data } = await supabase.from('tasks').select('*')
-  return data
+  // const { data } = await supabase.from('user_drinks').select('*')
+  // return data
 }
 
 export async function getOrCreateUser() {
-  // const pontentialUser = await supabase
-  //   .from('users')
-  //   .select()
-  //   .eq('telegram', MY_ID)
+  const pontentialUser = await supabase
+    .from('users')
+    .select()
+    .eq('telegram', MY_ID)
 
-  // if (pontentialUser.data.length !== 0) {
-  //   return pontentialUser.data[0]
-  // }
+    if (pontentialUser.data.length !== 0) {
+      return pontentialUser.data[0]
+    }
 
   const newUser = {
     telegram: MY_ID,
-    friends: {},
-    tasks: {},
-    score: 0,
+    name: user.name ? user.name : user.first_name,
   }
+
   console.log('new user')
   console.warn(newUser);
-  
 
-  // await supabase.from('users').insert(newUser)
+  await supabase.from('users').insert(newUser)
+
   return newUser
 }
 

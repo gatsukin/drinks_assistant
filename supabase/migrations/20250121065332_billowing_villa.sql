@@ -29,9 +29,17 @@
 */
 
 -- Create user_drinks table
+CREATE TABLE users (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  Telegram bigint NOT NULL,
+  name text NOT NULL,
+  created_at timestamptz DEFAULT now()
+);
+
+-- Create user_drinks table
 CREATE TABLE user_drinks (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  user_id bigint NOT NULL,
+  user_id uuid REFERENCES users ON DELETE CASCADE,
   name text NOT NULL,
   created_at timestamptz DEFAULT now()
 );
@@ -55,11 +63,18 @@ CREATE TABLE cocktail_ingredients (
 );
 
 -- Enable RLS
+ALTER TABLE users ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_drinks ENABLE ROW LEVEL SECURITY;
 ALTER TABLE cocktails ENABLE ROW LEVEL SECURITY;
 ALTER TABLE cocktail_ingredients ENABLE ROW LEVEL SECURITY;
 
 -- Create policies
+CREATE POLICY "Users"
+  ON users
+  FOR ALL
+  USING (true)
+  WITH CHECK (true);
+
 CREATE POLICY "Users can manage their own drinks"
   ON user_drinks
   FOR ALL

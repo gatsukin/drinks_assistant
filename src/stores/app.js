@@ -1,12 +1,9 @@
 import {
     getOrCreateUser,
-    registerRef,
-    fetchTasks,
-    completeTask,
   } from '@/api/app'
   
   import { defineStore } from 'pinia'
-  // import { useScoreStore } from './score'
+
   import { useTelegram } from '@/services/telegram'
   
   const { user } = useTelegram()
@@ -17,16 +14,8 @@ import {
       tasks: [],
     }),
     actions: {
-      async init(ref) {
+      async init() {
         this.user = await getOrCreateUser()
-  
-        // const score = useScoreStore()
-  
-        // score.setScore(this.user.score)
-  
-        // if (ref && +ref !== +this.user.telegram) {
-        //   await registerRef(user?.first_name ?? 'Lizard God', ref)
-        // }
       },
       async completeTask(task) {
         // await completeTask(this.user, task)
