@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { useBarStore } from '../stores/barStore';
 import { ref, onMounted, watch } from 'vue';
 
