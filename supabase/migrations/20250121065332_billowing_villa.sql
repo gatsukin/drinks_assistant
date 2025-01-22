@@ -69,7 +69,7 @@ ALTER TABLE cocktails ENABLE ROW LEVEL SECURITY;
 ALTER TABLE cocktail_ingredients ENABLE ROW LEVEL SECURITY;
 
 -- Create policies
-CREATE POLICY "Users"
+CREATE POLICY "Users policy"
   ON users
   FOR ALL
   USING (true)

@@ -4,6 +4,7 @@
             <RouterView />
         </div>
         <!-- <TheMenu /> -->
+        {{ app.user }}
     </main>
 </template>
 
