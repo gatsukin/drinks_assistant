@@ -33,8 +33,6 @@ CREATE TABLE user_drinks (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id bigint NOT NULL,
   name text NOT NULL,
-  type text NOT NULL,
-  volume integer NOT NULL,
   created_at timestamptz DEFAULT now()
 );
 

@@ -8,7 +8,7 @@ const newDrink = ref({
   type: '',
   volume: 0,
 });
-const isAdding = ref(false);
+const isAdding = ref(true);
 
 // Handle MainButton for adding drinks
 const showAddForm = () => {
@@ -23,26 +23,24 @@ const hideAddForm = () => {
 };
 
 const addNewDrink = async () => {
-  if (!newDrink.value.name || !newDrink.value.type || !newDrink.value.volume) return;
+  if (!newDrink.value.name) return;
   
-  window.Telegram.WebApp.MainButton.showProgress();
+  // window.Telegram.WebApp.MainButton.showProgress();
   
   try {
     await barStore.addDrink(window.Telegram.WebApp.initDataUnsafe.user?.id || 0, {
       name: newDrink.value.name,
-      type: newDrink.value.type,
-      volume: newDrink.value.volume,
     });
-    hideAddForm();
+    // hideAddForm();
   } finally {
-    window.Telegram.WebApp.MainButton.hideProgress();
+    // window.Telegram.WebApp.MainButton.hideProgress();
   }
 };
 
 onMounted(() => {
-  window.Telegram.WebApp.MainButton.setText('Add Drink');
-  window.Telegram.WebApp.MainButton.show();
-  window.Telegram.WebApp.MainButton.onClick(showAddForm);
+  // window.Telegram.WebApp.MainButton.setText('Add Drink');
+  // window.Telegram.WebApp.MainButton.show();
+  // window.Telegram.WebApp.MainButton.onClick(showAddForm);
 });
 </script>
 
@@ -53,12 +51,6 @@ onMounted(() => {
     <div v-if="isAdding" class="bg-white rounded-lg shadow p-4 mb-6">
       <div class="flex justify-between items-center mb-3">
         <h3 class="text-lg font-semibold">Add New Drink</h3>
-        <button 
-          @click="hideAddForm"
-          class="text-gray-500 hover:text-gray-700"
-        >
-          ✕
-        </button>
       </div>
       <form @submit.prevent="addNewDrink" class="space-y-4">
         <div>
@@ -66,31 +58,6 @@ onMounted(() => {
           <input
             v-model="newDrink.name"
             type="text"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
-            required
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Type</label>
-          <select
-            v-model="newDrink.type"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
-            required
-          >
-            <option value="">Select type</option>
-            <option value="vodka">Vodka</option>
-            <option value="gin">Gin</option>
-            <option value="rum">Rum</option>
-            <option value="tequila">Tequila</option>
-            <option value="whiskey">Whiskey</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Volume (ml)</label>
-          <input
-            v-model.number="newDrink.volume"
-            type="number"
-            min="1"
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
             required
           />
