@@ -31,7 +31,7 @@ body {
     display: flex;
     place-items: center;
     min-width: 320px;
-    min-height: 100vh;
+    min-height: var(--tg-viewport-stable-height);
 }
 
 h1 {
@@ -69,7 +69,7 @@ button:focus-visible {
 }
 #app main {
     width: 100%;
-    height: 100svh;
+    height: var(--tg-viewport-stable-height);
 }
 
 /* @media (prefers-color-scheme: light) {
