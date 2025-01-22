@@ -11,6 +11,8 @@ export async function fetchTasks() {
 }
 
 export async function getOrCreateUser() {
+	console.log(user);
+	
     const pontentialUser = await supabase
         .from("users")
         .select()
@@ -24,15 +26,13 @@ export async function getOrCreateUser() {
 
     const newUser = {
         telegram: MY_ID,
-        name: user.name ? user.name : user.first_name,
+        name: user.username ? user.username : user.first_name,
     };
 
-    console.log("new user");
-    console.warn(newUser);
 
-    await supabase.from("users").insert(newUser);
+    let { data, error} = await supabase.from("users").insert(newUser);
 
-    return newUser;
+    return data;
 }
 
 export async function updateScore(score) {
