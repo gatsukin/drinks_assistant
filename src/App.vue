@@ -8,7 +8,7 @@ const userStore = useUserStore();
 const barStore = useBarStore();
 const route = useRoute();
 
-const TG_DATA = window.Telegram.WebApp
+const TG_DATA = window.Telegram?.WebApp ?? window.Telegram.WebApp;
 
 // Проверяем наличие Telegram WebApp
 const isTelegramWebApp = () => {
@@ -22,10 +22,11 @@ onMounted(() => {
     }
 
     // Инициализируем данные пользователя
-    const webApp = window.Telegram.WebApp;
-	
-	console.warn('Telegram WebApp:')
-	console.log(window.Telegram.WebApp)
+    const webApp = window.Telegram?.WebApp ?? window.Telegram.WebApp;
+    if (!webApp) return;
+
+    console.warn("Telegram WebApp:");
+    console.log(window.Telegram.WebApp);
 
     const userData = webApp.initDataUnsafe?.user;
 
@@ -69,7 +70,11 @@ watch(
         >
             <!-- <h1 class="text-xl font-bold">Drinks Assistant</h1> -->
             <div>
-                {{ TG_DATA?.initDataUnsafe ? TG_DATA?.initDataUnsafe : 'ERROR TELEGRAM DATA' }}
+                {{
+                    TG_DATA?.initDataUnsafe
+                        ? TG_DATA?.initDataUnsafe
+                        : "ERROR TELEGRAM DATA"
+                }}
             </div>
             <!-- <nav>
                 <router-link
