@@ -69,7 +69,7 @@ button:focus-visible {
 }
 #app main {
     width: 100%;
-    height: var(--tg-viewport-height);
+    height: var(--tg-viewport-stable-height);
 }
 
 /* @media (prefers-color-scheme: light) {
