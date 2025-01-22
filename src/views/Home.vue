@@ -1,4 +1,11 @@
-<script setup></script>
 <template>
-    <div>1</div>
+    <TheProfile />
+
 </template>
+
+<script setup>
+import TheProfile from "../components/TheProfile.vue";
+</script>
+
+<style scoped lang="scss">
+</style>

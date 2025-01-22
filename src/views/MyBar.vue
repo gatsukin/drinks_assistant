@@ -1,97 +1,216 @@
+<template>
+    <div class="bar-header">
+        <div class="bar-header--row">
+            <div class="bar-header__pagename">Бар</div>
+            <div class="btn-wrap">
+                <button @click="toggleAccordion">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+                <button @click="toggleAddModal">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="filter">
+            <div class="filter-content" :class="{ open: FilterIsOpen }">
+                <div class="bar-switcher">
+                    <label
+                        class="bar-switcher__btn"
+                        v-for="(item, i) in switchArray"
+                        :key="i"
+                    >
+                        <input
+                            type="radio"
+                            name="type_alcohol"
+                            :value="item.value"
+                            v-model="switchValue"
+                            hidden
+                        />
+                        <span>{{ item.name }}</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="bar-list" v-if="filteredBar.length > 0">
+        <li class="bar-item" v-for="item in filteredBar" :key="item.id">
+            <div class="bar-item__name">
+                {{ item.name }}
+            </div>
+            <div class="bar-item__type">
+                {{ item.type }}
+            </div>
+        </li>
+    </ul>
+    <div v-else class="bar-list__empty">
+        <div class="empty-text">
+            В баре пока что ничего нет
+        </div>
+        <button @click="toggleAddModal">
+            Добавить в бар
+        </button>
+    </div>
+
+    <TheModal v-model="showAddModal" title="Пополнение бара">
+        <FormAddToBar @submit="submitDrink"></FormAddToBar>
+    </TheModal>
+</template>
+
 <script setup>
-import { useBarStore } from '../stores/barStore';
-import { ref, onMounted, watch } from 'vue';
+import { ref, computed } from "vue";
+import FormAddToBar from "@/components/FormAddToBar.vue";
 
-const barStore = useBarStore();
-const newDrink = ref({
-  name: '',
-  type: '',
-  volume: 0,
-});
-const isAdding = ref(true);
+import { useAppStore } from "@/stores/app";
+const app = useAppStore();
 
-// Handle MainButton for adding drinks
-const showAddForm = () => {
-  isAdding.value = true;
-  window.Telegram.WebApp.MainButton.hide();
-};
+const switchValue = ref("all");
+const switchArray = [
+    { name: "Все", value: "all" },
+    { name: "Алкоголь", value: "alcohol" },
+    { name: "Безалкогольное", value: "none" },
+];
 
-const hideAddForm = () => {
-  isAdding.value = false;
-  newDrink.value = { name: '', type: '', volume: 0 };
-  window.Telegram.WebApp.MainButton.show();
-};
-
-const addNewDrink = async () => {
-  if (!newDrink.value.name) return;
-  
-  // window.Telegram.WebApp.MainButton.showProgress();
-  
-  try {
-    await barStore.addDrink(window.Telegram.WebApp.initDataUnsafe.user?.id || 0, {
-      name: newDrink.value.name,
+const filteredBar = computed(() => {
+    return app.bar.filter((item) => {
+        if (switchValue.value === "all") return true;
+        if (switchValue.value === "none") return !item.isAlcoholic;
+        if (switchValue.value === "alcohol") return item.isAlcoholic;
+        return true;
     });
-    // hideAddForm();
-  } finally {
-    // window.Telegram.WebApp.MainButton.hideProgress();
-  }
+});
+
+const FilterIsOpen = ref(false);
+const toggleAccordion = () => {
+    FilterIsOpen.value = !FilterIsOpen.value;
 };
 
-onMounted(() => {
-  // window.Telegram.WebApp.MainButton.setText('Add Drink');
-  // window.Telegram.WebApp.MainButton.show();
-  // window.Telegram.WebApp.MainButton.onClick(showAddForm);
-});
+const showAddModal = ref(false);
+const toggleAddModal = () => {
+    showAddModal.value = !showAddModal.value;
+};
+
+const submitDrink = async (drink) => {
+    try {
+        await app.addDrinkToBar(drink);
+        showAddModal.value = false;
+    } catch (error) {
+        console.error("Ошибка добавления:", error);
+    }
+};
 </script>
 
-<template>
-  <div>
-    <h2 class="text-2xl font-bold mb-4">My Bar</h2>
-    
-    <div v-if="isAdding" class="bg-white rounded-lg shadow p-4 mb-6">
-      <div class="flex justify-between items-center mb-3">
-        <h3 class="text-lg font-semibold">Add New Drink</h3>
-      </div>
-      <form @submit.prevent="addNewDrink" class="space-y-4">
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Name</label>
-          <input
-            v-model="newDrink.name"
-            type="text"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-        >
-          Add Drink
-        </button>
-      </form>
-    </div>
+<style scoped lang="scss">
+.bar-header {
+    background-color: #242424;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    &--row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__pagename {
+        font-size: 24px;
+        font-weight: 700;
+    }
 
-    <div class="bg-white rounded-lg shadow p-4">
-      <h3 class="text-lg font-semibold mb-3">My Drinks</h3>
-      <div v-if="barStore.isLoading" class="text-center py-4">
-        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
-      </div>
-      <div v-else-if="barStore.drinks.length === 0" class="text-center py-4 text-gray-500">
-        No drinks in your bar yet
-      </div>
-      <ul v-else class="space-y-2">
-        <li
-          v-for="drink in barStore.drinks"
-          :key="drink.id"
-          class="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md transition-colors"
-        >
-          <div>
-            <span class="font-medium">{{ drink.name }}</span>
-            <span class="text-sm text-gray-500 ml-2">({{ drink.type }})</span>
-          </div>
-          <span class="text-sm">{{ drink.volume }}ml</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</template>
+    .btn-wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+.bar-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    &__btn {
+        width: 100%;
+        cursor: pointer;
+
+        span {
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            padding: 5px 10px;
+            font-weight: 500;
+            font-family: inherit;
+            background-color: #1a1a1a;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: 0.25s;
+        }
+
+        input:checked + span {
+            border-color: #646cff !important;
+        }
+    }
+}
+.bar-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+
+    &__empty {
+        .empty-text {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 10vh 0;
+    }
+
+    .bar-item {
+        padding: 5px 0;
+        &__name {
+            font-size: 20px;
+        }
+        &__type {
+            font-size: 14px;
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+.filter {
+    &-item {
+        overflow: hidden;
+    }
+    &-header {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        align-items: center;
+        transition: background-color 0.2s;
+        i {
+            margin-left: 10px;
+        }
+    }
+    &-header:hover {
+    }
+    &-content {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.open {
+            padding: 5px 0px;
+            max-height: 100px; /* Можно регулировать в зависимости от содержимого */
+        }
+    }
+}
+</style>

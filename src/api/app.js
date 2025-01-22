@@ -3,16 +3,9 @@ import { useTelegram } from "@/services/telegram";
 
 const { user } = useTelegram();
 
-const MY_ID = user?.id ?? 4252;
-
-export async function fetchTasks() {
-    // const { data } = await supabase.from('user_drinks').select('*')
-    // return data
-}
+const MY_ID = user?.id ?? 268666333;
 
 export async function getOrCreateUser() {
-	console.log(user);
-	
     const pontentialUser = await supabase
         .from("users")
         .select()
@@ -22,52 +15,42 @@ export async function getOrCreateUser() {
         return pontentialUser.data[0];
     }
 
-    console.warn(user);
-
     const newUser = {
         telegram: MY_ID,
-        name: user.username ? user.username : user.first_name,
+        name: user.first_name ? user.first_name : user.username,
     };
 
+    if (import.meta.env.VITE_DEV) return newUser;
 
-    let { data, error} = await supabase.from("users").insert(newUser);
+    let { data, error } = await supabase.from("users").insert(newUser);
 
     return data;
 }
+export async function fetchUserBar() {
+    try {
+        const { data, error } = await supabase
+            .from("user_drinks")
+            .select("*")
+            .eq("user_telegram", MY_ID);
 
-export async function updateScore(score) {
-    // await supabase.from('users').update({ score }).eq('telegram', MY_ID)
+        if (error) throw error;
+        return data;
+    } catch (error) {
+        console.error("Error fetching bar:", error);
+    }
 }
+export async function sendDrinkToBar(drink) {
+    try {
+        const { data, error } = await supabase
+            .from("user_drinks")
+            .insert([{ ...drink, user_telegram: MY_ID }])
+            .select()
+            .single();
 
-export async function registerRef(userName, refId) {
-    const { data } = await supabase
-        .from("users")
-        .select()
-        .eq("telegram", +refId);
+        if (error) throw error;
 
-    const refUser = data[0];
-
-    console.log("User");
-    console.warn(refUser);
-
-    // await supabase
-    //   .from('users')
-    //   .update({
-    //     friends: { ...refUser.friends, [MY_ID]: userName },
-    //     score: refUser.score + 50,
-    //   })
-    //   .eq('telegram', +refId)
-}
-
-export async function completeTask(user, task) {
-    // const score = useScoreStore()
-    // const newScore = score.score + task.amount
-    // score.setScore(newScore)
-    // await supabase
-    //   .from('users')
-    //   .update({
-    //     tasks: { ...user.tasks, [task.id]: true },
-    //     score: newScore,
-    //   })
-    //   .eq('telegram', MY_ID)
+        return data;
+    } catch (error) {
+        console.error("Error adding drink:", error);
+    }
 }

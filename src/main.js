@@ -6,9 +6,15 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+import TheLoader from './components/TheLoader.vue'
+import TheModal from './components/TheModal.vue'
+
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+
+app.component('TheLoader', TheLoader)
+app.component('TheModal', TheModal)
 
 app.mount('#app')

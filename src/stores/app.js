@@ -1,28 +1,21 @@
-import {
-    getOrCreateUser,
-  } from '@/api/app'
-  
-  import { defineStore } from 'pinia'
+import { getOrCreateUser, fetchUserBar, sendDrinkToBar } from "@/api/app";
 
-  import { useTelegram } from '@/services/telegram'
-  
-  const { user } = useTelegram()
-  
-  export const useAppStore = defineStore('app', {
+import { defineStore } from "pinia";
+
+export const useAppStore = defineStore("app", {
     state: () => ({
-      user: {},
-      tasks: [],
+        user: {},
+        bar: [],
     }),
     actions: {
-      async init() {
-        this.user = await getOrCreateUser()
-      },
-      async completeTask(task) {
-        // await completeTask(this.user, task)
-      },
-      async fetchTasks() {
-        // this.tasks = await fetchTasks()
-      },
+        async init() {
+            this.user = await getOrCreateUser();
+            this.bar = await fetchUserBar();
+        },
+        async addDrinkToBar(drink) {
+            let newDrink = await sendDrinkToBar(drink);
+            this.bar.push(newDrink);
+            return newDrink;
+        },
     },
-  })
-  
+});

@@ -1,33 +1,3 @@
-/*
-  # Drinks Assistant Schema
-
-  1. New Tables
-    - `user_drinks`
-      - `id` (uuid, primary key)
-      - `user_id` (bigint, not null) - Telegram user ID
-      - `name` (text, not null)
-      - `type` (text, not null)
-      - `volume` (integer, not null)
-      - `created_at` (timestamptz)
-    
-    - `cocktails`
-      - `id` (uuid, primary key)
-      - `name` (text, not null)
-      - `recipe` (text, not null)
-      - `created_at` (timestamptz)
-    
-    - `cocktail_ingredients`
-      - `id` (uuid, primary key)
-      - `cocktail_id` (uuid, references cocktails)
-      - `ingredient_type` (text, not null)
-      - `amount` (integer)
-      - `unit` (text)
-
-  2. Security
-    - Enable RLS on all tables
-    - Add policies for user access to their own drinks
-*/
-
 -- Create user_drinks table
 CREATE TABLE users (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -39,8 +9,10 @@ CREATE TABLE users (
 -- Create user_drinks table
 CREATE TABLE user_drinks (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  user_id uuid REFERENCES users ON DELETE CASCADE,
+  user_telegram bigint REFERENCES users ON DELETE CASCADE,
   name text NOT NULL,
+  type text NOT NULL,
+  isAlcoholic bool NOT NULL
   created_at timestamptz DEFAULT now()
 );
 
