@@ -69,7 +69,7 @@ button:focus-visible {
 }
 #app main {
     width: 100%;
-    height: 100vh;
+    height: 100svh;
 }
 
 /* @media (prefers-color-scheme: light) {
