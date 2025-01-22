@@ -31,7 +31,7 @@ body {
     display: flex;
     place-items: center;
     min-width: 320px;
-    min-height: var(--tg-viewport-stable-height);
+    min-height: 100svh;
 }
 
 h1 {
@@ -51,7 +51,7 @@ button {
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #646cff!important;
+    border-color: #646cff !important;
 }
 /* button:focus,
 button:focus-visible {
@@ -69,7 +69,7 @@ button:focus-visible {
 }
 #app main {
     width: 100%;
-    height: var(--tg-viewport-stable-height);
+    height: 100svh;
 }
 
 /* @media (prefers-color-scheme: light) {
