@@ -11,9 +11,10 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
     --display-height: calc(
-        var(--tg-viewport-stable-height, 100svh) - var(--tg-content-safe-area-inset-top, 0) -
-            var(--tg-content-safe-area-inset-bottom, 0) -
+        var(--tg-viewport-stable-height, 100svh) - var(--tg-content-safe-area-inset-top, 0px) -
+            var(--tg-content-safe-area-inset-bottom, 0px) -
             var(--tg-safe-area-inset-top, 44px) - var(--tg-safe-area-inset-bottom, 34px)
     );
 }

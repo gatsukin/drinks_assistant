@@ -23,7 +23,7 @@ import { RouterLink } from "vue-router";
 <style scoped lang="scss">
 nav {
     position: fixed;
-    bottom: calc(var(--tg-safe-area-inset-bottom));
+    bottom: max(var(--tg-safe-area-inset-bottom), 10px);
     // bottom: 10px;
     left: 10px;
     right: 10px;
