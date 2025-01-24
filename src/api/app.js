@@ -6,7 +6,10 @@ const { user } = useTelegram();
 const MY_ID = user?.id ?? 268666333;
 
 export async function getOrCreateUser() {
-    console.log( typeof import.meta.env.VITE_DEV);
+    console.log('typeof' + typeof import.meta.env.VITE_DEV);
+    console.log(import.meta.env.VITE_DEV === 'false');
+    console.log(import.meta.env.VITE_DEV == 'false');
+    
     
     // 1. Исправляем опечатку в переменной
     const { data: existingUser, error: findError } = await supabase
@@ -38,7 +41,7 @@ export async function getOrCreateUser() {
     };
 
     // 6. В режиме разработки можно добавить логирование
-    if (import.meta.env.VITE_DEV == 'false') {
+    if (import.meta.env.VITE_DEV === 'false') {
         console.log("Dev mode: would create user", newUser);
         return newUser;
     }
