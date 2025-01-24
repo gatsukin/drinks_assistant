@@ -24,7 +24,7 @@ export async function getOrCreateUser() {
 
     if (import.meta.env.VITE_DEV == 'true') return newUser;
 
-    let { data, error } = await supabase.from("users").insert([newUser]);
+    let { data, error } = await supabase.from("users").insert(newUser);
 
     console.log(data);
     
