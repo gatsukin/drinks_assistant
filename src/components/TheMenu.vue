@@ -42,13 +42,20 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 0;
+    transition: .25s;
 
     &.active {
-        background-color: #2c2c2c;
+        background-color: #646cff;
     }
 
     &:not(:last-child) {
         border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+    &:first-child {
+        border-radius: 10px 0 0 10px;
     }
 }
 </style>

@@ -39,7 +39,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .page {
-    height: calc(100% - 50px);
+    height: calc(100% - 50px - max(var(--tg-safe-area-inset-bottom, 34px), 20px));
     overflow: hidden;
     padding: 20px 0 0;
 
