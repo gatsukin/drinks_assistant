@@ -22,7 +22,7 @@ export async function getOrCreateUser() {
 
     if (import.meta.env.VITE_DEV) return newUser;
 
-    let { data, error } = await supabase.from("users").insert(newUser);
+    let { data, error } = await supabase.from("users").insert([newUser]);
 
     return data;
 }
