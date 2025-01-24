@@ -12,7 +12,9 @@ export async function getOrCreateUser() {
         .eq("telegram", MY_ID);
 
     if (pontentialUser.data.length !== 0) {
+        console.log(pontentialUser.data[0]);
         return pontentialUser.data[0];
+
     }
 
     const newUser = {
@@ -23,6 +25,9 @@ export async function getOrCreateUser() {
     if (import.meta.env.VITE_DEV == 'true') return newUser;
 
     let { data, error } = await supabase.from("users").insert([newUser]);
+
+    console.log(data);
+    
 
     return data;
 }
