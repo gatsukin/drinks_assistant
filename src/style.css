@@ -65,11 +65,17 @@ button:focus-visible {
 #app {
     max-width: 1280px;
     margin: 0 auto;
-    width: 100%;
+    width: 100svw;
+    height: 100svh;
+    padding-top: var(--tg-content-safe-area-inset-top);
+    padding-bottom: var(--tg-content-safe-area-inset-bottom);
+    padding-left: var(--tg-content-safe-area-inset-left);
+    padding-right: var(--tg-content-safe-area-inset-right);
 }
 #app main {
     width: 100%;
-    height: 100svh;
+    height: 100%;
+    position: relative;
 }
 
 /* @media (prefers-color-scheme: light) {
