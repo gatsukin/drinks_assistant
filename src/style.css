@@ -14,6 +14,8 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -27,11 +29,10 @@ a:hover {
 }
 
 body {
-    margin: 0;
     display: flex;
     place-items: center;
     min-width: 320px;
-    min-height: 100svh;
+    background-color: green;
 }
 
 h1 {
@@ -53,10 +54,6 @@ button {
 button:hover {
     border-color: #646cff !important;
 }
-/* button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-} */
 
 .card {
     padding: 2em;
@@ -71,11 +68,14 @@ button:focus-visible {
     padding-bottom: var(--tg-content-safe-area-inset-bottom);
     padding-left: var(--tg-content-safe-area-inset-left);
     padding-right: var(--tg-content-safe-area-inset-right);
+    background-color: red;
+
 }
 #app main {
     width: 100%;
     height: 100%;
     position: relative;
+    background-color: blue;
 }
 
 /* @media (prefers-color-scheme: light) {

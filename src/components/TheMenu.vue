@@ -23,14 +23,17 @@ import { RouterLink } from "vue-router";
 <style scoped lang="scss">
 nav {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: calc(var(--tg-content-safe-area-inset-bottom) + 10px);
+    // bottom: 10px;
+    left: 10px;
+    right: 10px;
     height: 50px;
-    width: 100%;
+    width: calc(100% - 20px);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
+    border-radius: 10px;
 }
 button {
     width: 100%;
