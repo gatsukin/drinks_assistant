@@ -6,6 +6,8 @@ const { user } = useTelegram();
 const MY_ID = user?.id ?? 268666333;
 
 export async function getOrCreateUser() {
+    console.log(import.meta.env.VITE_DEV);
+    
     // 1. Исправляем опечатку в переменной
     const { data: existingUser, error: findError } = await supabase
         .from("users")
