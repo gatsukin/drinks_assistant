@@ -83,7 +83,7 @@ button:hover {
     width: 100svw;
     height: var(--display-height);
     padding-top: calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top));
-    padding-bottom: var(--tg-safe-area-inset-bottom, 34px);
+    padding-bottom: var(--tg-safe-area-inset-bottom, 0px);
     padding-left: var(--tg-content-safe-area-inset-left);
     padding-right: var(--tg-content-safe-area-inset-right);
     background-color: red;
