@@ -64,7 +64,7 @@ document.addEventListener("keydown", (e) => {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--tg-theme-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,7 @@ document.addEventListener("keydown", (e) => {
 }
 
 .modal-container {
-    background-color: #242424;
+    background-color: var(--tg-theme-secondary-bg-color);
     border-radius: 8px;
     max-width: 500px;
     width: 90%;
@@ -102,7 +102,7 @@ document.addEventListener("keydown", (e) => {
     background: none;
     font-size: 24px;
     cursor: pointer;
-    color: #666;
+    color: var(--tg-theme-button-color);
     padding: 0 8px;
 }
 

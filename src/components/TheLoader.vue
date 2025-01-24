@@ -18,8 +18,8 @@
     width: 40px;
     height: 40px;
     border: solid 4px transparent;
-    border-top-color: #646cff !important;
-    border-left-color: #646cff !important;
+    border-top-color: var(--tg-theme-link-color) !important;
+    border-left-color: var(--tg-theme-link-color) !important;
     border-radius: 50%;
 }
 

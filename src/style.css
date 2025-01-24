@@ -16,6 +16,21 @@
         var(--tg-viewport-stable-height, 100svh) -
             var(--tg-safe-area-inset-top, 44px)
     );
+
+
+    --tg-theme-bg-color: #212121;
+    --tg-theme-text-color: #ffffff;
+    --tg-theme-hint-color: #aaaaaa;
+    --tg-theme-link-color: #8774e1;
+    --tg-theme-button-color: #8774e1;
+    --tg-theme-button-text-color: #ffffff;
+    --tg-theme-secondary-bg-color: #0f0f0f;
+    --tg-theme-header-bg-color: #212121;
+    --tg-theme-accent-text-color: #8774e1;
+    --tg-theme-section-bg-color: #212121;
+    --tg-theme-section-header-text-color: #aaaaaa;
+    --tg-theme-subtitle-text-color: #aaaaaa;
+    --tg-theme-destructive-text-color: #e53935;
 }
 
 * {
@@ -26,7 +41,7 @@
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: var(--tg-theme-link-color);
     text-decoration: inherit;
 }
 a:hover {
@@ -39,7 +54,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: green;
+    background-color: var(--tg-theme-bg-color);
 }
 
 body {
@@ -60,17 +75,18 @@ h1 {
 
 button {
     border-radius: 8px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     cursor: pointer;
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #646cff !important;
+    border-color: var(--tg-theme-button-text-color) !important;
 }
 
 .card {
@@ -86,13 +102,11 @@ button:hover {
     padding-bottom: 0px;
     padding-left: var(--tg-safe-area-inset-left);
     padding-right: var(--tg-safe-area-inset-right);
-    background-color: red;
 }
 #app main {
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: blue;
 }
 
 /* @media (prefers-color-scheme: light) {

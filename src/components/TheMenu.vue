@@ -43,9 +43,10 @@ button {
     justify-content: center;
     border-radius: 0;
     transition: .25s;
+    background-color: var(--tg-theme-secondary-bg-color);
 
     &.active {
-        background-color: #646cff;
+        background-color: var(--tg-theme-button-color);
     }
 
     &:not(:last-child) {

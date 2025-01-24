@@ -45,12 +45,8 @@
         </li>
     </ul>
     <div v-else class="bar-list__empty">
-        <div class="empty-text">
-            В баре пока что ничего нет
-        </div>
-        <button @click="toggleAddModal">
-            Добавить в бар
-        </button>
+        <div class="empty-text">В баре пока что ничего нет</div>
+        <button @click="toggleAddModal">Добавить в бар</button>
     </div>
 
     <TheModal v-model="showAddModal" title="Пополнение бара">
@@ -103,7 +99,7 @@ const submitDrink = async (drink) => {
 
 <style scoped lang="scss">
 .bar-header {
-    background-color: #242424;
+    background-color: var(--tg-theme-bg-color);
     padding-bottom: 10px;
     position: sticky;
     top: 0;
@@ -142,15 +138,16 @@ const submitDrink = async (drink) => {
             padding: 5px 10px;
             font-weight: 500;
             font-family: inherit;
-            background-color: #1a1a1a;
+            background-color: var(--tg-theme-button-color);
+            color: var(--tg-theme-button-text-color);
             width: 100%;
             border-radius: 8px;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
             transition: 0.25s;
         }
 
         input:checked + span {
-            border-color: #646cff !important;
+            border-color: var(--tg-theme-button-text-color) !important;
         }
     }
 }
