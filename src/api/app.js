@@ -6,25 +6,54 @@ const { user } = useTelegram();
 const MY_ID = user?.id ?? 268666333;
 
 export async function getOrCreateUser() {
-    const pontentialUser = await supabase
+    // 1. Исправляем опечатку в переменной
+    const { data: existingUser, error: findError } = await supabase
         .from("users")
         .select()
         .eq("telegram", MY_ID);
 
-    if (pontentialUser.data.length !== 0) {
-        return pontentialUser.data[0];
+    // 2. Обрабатываем ошибку поиска
+    if (findError) {
+        console.error("Error finding user:", findError);
+        throw findError;
     }
 
+    // 3. Если пользователь найден - возвращаем
+    if (existingUser && existingUser.length > 0) {
+        return existingUser[0];
+    }
+
+    // 4. Проверяем наличие объекта user
+    if (!user) {
+        throw new Error("User object is undefined");
+    }
+
+    // 5. Создаем нового пользователя
     const newUser = {
         telegram: MY_ID,
-        name: user.first_name ? user.first_name : user.username,
+        name: user.first_name || user.username || "Anonymous",
+        created_at: new Date().toISOString(),
     };
 
-    if (import.meta.env.VITE_DEV) return newUser;
+    // 6. В режиме разработки можно добавить логирование
+    if (import.meta.env.VITE_DEV) {
+        console.log("Dev mode: would create user", newUser);
+        return newUser;
+    }
 
-    let { data, error } = await supabase.from("users").insert([newUser]);
+    // 7. Вставляем пользователя с возвратом данных
+    const { data: createdUser, error: createError } = await supabase
+        .from("users")
+        .insert([newUser])
+        .select();
 
-    return data;
+    // 8. Обрабатываем ошибку создания
+    if (createError) {
+        console.error("Error creating user:", createError);
+        throw createError;
+    }
+
+    return createdUser[0];
 }
 export async function fetchUserBar() {
     try {
