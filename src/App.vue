@@ -25,6 +25,7 @@ const app = useAppStore();
 
 const { tg } = useTelegram();
 
+
 app.init().then(() => {
     loaded.value = true;
 });
