@@ -13,8 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
     
     --display-height: calc(
-        var(--tg-viewport-stable-height, 100svh) - var(--tg-content-safe-area-inset-top, 0px) -
-            var(--tg-content-safe-area-inset-bottom, 0px) -
+        var(--tg-viewport-stable-height, 100svh) -
             var(--tg-safe-area-inset-top, 44px) - var(--tg-safe-area-inset-bottom, 34px)
     );
 }
@@ -83,7 +82,7 @@ button:hover {
     margin: 0 auto;
     width: 100svw;
     height: var(--display-height);
-    padding-top: var(--tg-content-safe-area-inset-top);
+    padding-top: calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top));
     padding-bottom: var(--tg-content-safe-area-inset-bottom);
     padding-left: var(--tg-content-safe-area-inset-left);
     padding-right: var(--tg-content-safe-area-inset-right);
