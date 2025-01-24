@@ -11,6 +11,11 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    --display-height: calc(
+        var(--tg-viewport-stable-height, 100svh) - var(--tg-content-safe-area-inset-top, 0) -
+            var(--tg-content-safe-area-inset-bottom, 0) -
+            var(--tg-safe-area-inset-top, 44px) - var(--tg-safe-area-inset-bottom, 34px)
+    );
 }
 
 * {
@@ -76,11 +81,7 @@ button:hover {
     max-width: 1280px;
     margin: 0 auto;
     width: 100svw;
-    height: calc(
-        100svh - var(--tg-content-safe-area-inset-top) -
-            var(--tg-content-safe-area-inset-bottom) -
-            var(--tg-safe-area-inset-top) - var(--tg-safe-area-inset-bottom)
-    );
+    height: var(--display-height);
     padding-top: var(--tg-content-safe-area-inset-top);
     padding-bottom: var(--tg-content-safe-area-inset-bottom);
     padding-left: var(--tg-content-safe-area-inset-left);
