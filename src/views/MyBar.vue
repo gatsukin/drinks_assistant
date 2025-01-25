@@ -118,6 +118,10 @@ const submitDrink = async (drink) => {
         display: flex;
         flex-direction: row;
         gap: 10px;
+
+        button {
+            font-size: .9em;
+        }
     }
 }
 .bar-switcher {

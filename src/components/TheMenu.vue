@@ -2,13 +2,21 @@
     <nav>
         <RouterLink to="/" custom v-slot="{ isActive, navigate }">
             <button @click="navigate" :class="{ active: isActive }">
-                <i class="menu-button fa fa-user" aria-hidden="true"></i>
+                <i class="menu-button fa fa-martini-glass-citrus" aria-hidden="true"></i>
             </button>
         </RouterLink>
         <RouterLink to="/bar" custom v-slot="{ isActive, navigate }">
             <button @click="navigate" :class="{ active: isActive }">
                 <i
-                    class="menu-button fa fa-martini-glass-citrus"
+                    class="menu-button fa fa-box"
+                    aria-hidden="true"
+                ></i>
+            </button>
+        </RouterLink>
+        <RouterLink to="/status" custom v-slot="{ isActive, navigate }">
+            <button @click="navigate" :class="{ active: isActive }">
+                <i
+                    class="menu-button fa fa-chart-simple"
                     aria-hidden="true"
                 ></i>
             </button>

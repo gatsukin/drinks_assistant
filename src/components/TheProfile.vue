@@ -1,20 +1,31 @@
 <template>
-    <div class="name">Здравствуй, {{user.name}}!</div>
+    <div class="name">Статистика</div>
     <div class="stats">
         <div class="stats__block">
-            <div class="stats__block--name">Ваш бар</div>
-            <div class="stats__block--count">{{ bar.length }}</div>
+            <div class="stats__block--name">Имя пользователя</div>
+            <div class="stats__block--count">{{ user.name }}</div>
         </div>
+
         <div class="stats__block">
-            <div class="stats__block--name">Коктейлей доступно</div>
-            <div class="stats__block--count">2</div>
+            <div class="stats__block--name">Ваш бар</div>
+            <div class="stats__block--count">{{ bar_lenght_db }}</div>
+        </div>
+
+        <div class="stats__block">
+            <div class="stats__block--name">Ингредиентов в базе</div>
+            <div class="stats__block--count">{{ ingredients_lenght_db }}</div>
+        </div>
+
+        <div class="stats__block">
+            <div class="stats__block--name">Коктейлей в базе</div>
+            <div class="stats__block--count">{{ cocktails_lenght_db }}</div>
         </div>
     </div>
 </template>
 
 <script setup>
 import { useAppStore } from "@/stores/app";
-const {user,bar} = useAppStore();
+const {user,bar_lenght_db, cocktails_lenght_db, ingredients_lenght_db} = useAppStore();
 </script>
 
 <style scoped lang="scss">
@@ -35,29 +46,29 @@ const {user,bar} = useAppStore();
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
     &__block {
         width: 100%;
-        padding: 0 15px;
+        padding: 10px 15px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        gap: 20px;
 
         &:not(:last-child) {
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         &--name {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
-            margin-bottom: 5px;
         }
 
         &--count {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
         }
     }

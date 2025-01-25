@@ -14,7 +14,6 @@ export async function getOrCreateUser() {
     if (pontentialUser.data.length !== 0) {
         console.log(pontentialUser.data[0]);
         return pontentialUser.data[0];
-
     }
 
     const newUser = {
@@ -22,9 +21,12 @@ export async function getOrCreateUser() {
         name: user.first_name ? user.first_name : user.username,
     };
 
-    if (import.meta.env.VITE_DEV == 'true') return newUser;
+    if (import.meta.env.VITE_DEV == "true") return newUser;
 
-    let { data, error } = await supabase.from("users").insert([newUser]).select();
+    let { data, error } = await supabase
+        .from("users")
+        .insert([newUser])
+        .select();
 
     return data[0];
 }
@@ -54,5 +56,35 @@ export async function sendDrinkToBar(drink) {
         return data;
     } catch (error) {
         console.error("Error adding drink:", error);
+    }
+}
+export async function fetchCocktails() {
+    try {
+        const { data, error } = await supabase.from("cocktails").select("*");
+        if (error) throw error;
+
+        return data;
+    } catch (error) {
+        console.error("Error fetching bar:", error);
+    }
+}
+export async function fetchIngredients() {
+    try {
+        const { data, error } = await supabase.from("ingredients").select("*");
+        if (error) throw error;
+
+        return data
+    } catch (error) {
+        console.error("Error fetching bar:", error);
+    }
+}
+export async function fetchIngredientsGroup() {
+    try {
+        const { data, error } = await supabase.from("ingredients_group").select("*");
+        if (error) throw error;
+
+        return data
+    } catch (error) {
+        console.error("Error fetching bar:", error);
     }
 }
