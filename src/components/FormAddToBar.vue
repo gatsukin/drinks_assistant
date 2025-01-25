@@ -1,31 +1,46 @@
 <template>
     <form @submit.prevent="handleSubmit" class="drink-form">
         <div class="form-group">
-            <label for="name">Название напитка:</label>
+            <label>Название напитка:</label>
             <input
                 type="text"
-                id="name"
                 v-model="drink.name"
                 required
-                placeholder=""
+                placeholder="Введите название"
+                class="form-input"
             />
         </div>
 
         <div class="form-group">
-            <label for="type">Тип напитка:</label>
-            <select id="type" v-model="drink.type" required>
-                <option disabled value=""></option>
-                <option v-for="type in drinkTypes" :key="type">
-                    {{ type }}
-                </option>
-            </select>
+            <label>Тип напитка:</label>
+            <multiselect
+                v-model="drink.group"
+                :options="groupOptions"
+                :searchable="false"
+                label="name"
+                track-by="name"
+                placeholder="Выберите тип"
+                required
+            />
         </div>
 
-        <div class="form-group checkbox-group">
-            <label>
-                <input type="checkbox" v-model="drink.isAlcoholic" />
-                Алкогольный
-            </label>
+        <div class="form-group">
+            <label>Напиток:</label>
+            <multiselect
+                v-model="drink.ingredient"
+                :options="ingredientOptions"
+                group-values="items"
+                group-label="name"
+                :group-select="false"
+                placeholder="Выберите ингредиент"
+                label="name"
+                track-by="id"
+                required
+            >
+                <template slot="singleLabel" slot-scope="{ option }">
+                    {{ option.name }}
+                </template>
+            </multiselect>
         </div>
 
         <button type="submit" class="submit-btn">Добавить напиток</button>
@@ -33,96 +48,125 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import Multiselect from "vue-multiselect";
+import { useAppStore } from "@/stores/app";
+
+const { ingredients, ingredients_group } = useAppStore();
 
 const drink = ref({
     name: "",
-    type: "",
-    isAlcoholic: false,
+    group: { name: "all" },
+    ingredient: null,
 });
 
-const drinkTypes = ref([
-    "Джин",
-    "Водка",
-    "Ром",
-    "Виски",
-    "Текила",
-    "Вермут",
-    "Ликёр",
-    "Тоник",
-    "Сок",
-    "Сироп",
+// Опции для групп
+const groupOptions = computed(() => [
+    { name: "all", label: "Любой" },
+    ...ingredients_group.map((g) => ({ name: g.name })),
 ]);
+
+// Опции для ингредиентов с группировкой
+const ingredientOptions = computed(() => {
+    const filtered =
+        drink.value.group.name === "all"
+            ? ingredients
+            : ingredients.filter((i) => i.group === drink.value.group.name);
+
+    const groups = filtered.reduce((acc, item) => {
+        const group = item.group;
+        if (!acc[group]) acc[group] = [];
+        acc[group].push(item);
+        return acc;
+    }, {});
+
+    return Object.keys(groups).map((group) => ({
+        name: group,
+        items: groups[group],
+    }));
+});
 
 const emit = defineEmits(["submit"]);
 
 const handleSubmit = () => {
     emit("submit", {
-        ...drink.value
+        name: drink.value.name,
+        group: drink.value.group.name,
+        ingredient: drink.value.ingredient,
     });
 
     // Сброс формы
     drink.value = {
         name: "",
-        type: "",
-        isAlcoholic: false,
+        group: { name: "all" },
+        ingredient: null,
     };
 };
 </script>
 
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>
 <style scoped lang="scss">
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     font-weight: 500;
+    color: #374151;
 }
 
-input[type="text"],
-select {
+.form-input {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.2s;
 
-    &::placeholder {
-        color: #fff;
+    &:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
     }
 }
 
-.checkbox-group {
-    margin-top: 10px;
-}
-
-.checkbox-group label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-}
-
 .submit-btn {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
+    display: block;
     width: 100%;
-    margin-top: 15px;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #2563eb;
+    }
+
+    &:active {
+        background-color: #1d4ed8;
+    }
 }
 
-.submit-btn:hover {
-    background-color: #45a049;
+:deep(.multiselect) {
+    .multiselect__tags {
+        @apply border-gray-300 rounded-lg;
+        min-height: 42px;
+    }
+
+    .multiselect__option--group {
+        @apply bg-gray-100 text-gray-700 font-semibold;
+    }
+
+    .multiselect__option--highlight {
+        @apply bg-blue-500 text-white;
+    }
 }
 </style>

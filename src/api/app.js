@@ -38,6 +38,9 @@ export async function fetchUserBar() {
             .eq("user_telegram", MY_ID);
 
         if (error) throw error;
+
+        console.log('✅ Bar is loaded');
+
         return data;
     } catch (error) {
         console.error("Error fetching bar:", error);
@@ -62,7 +65,8 @@ export async function fetchCocktails() {
     try {
         const { data, error } = await supabase.from("cocktails").select("*");
         if (error) throw error;
-
+        console.log('✅ Cocktails is loaded');
+        
         return data;
     } catch (error) {
         console.error("Error fetching bar:", error);
@@ -72,6 +76,7 @@ export async function fetchIngredients() {
     try {
         const { data, error } = await supabase.from("ingredients").select("*");
         if (error) throw error;
+        console.log('✅ Ingredients is loaded');
 
         return data
     } catch (error) {
@@ -82,6 +87,8 @@ export async function fetchIngredientsGroup() {
     try {
         const { data, error } = await supabase.from("ingredients_group").select("*");
         if (error) throw error;
+
+        console.log('✅ Ingredients Group is loaded');
 
         return data
     } catch (error) {
