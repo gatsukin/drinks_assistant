@@ -1,10 +1,10 @@
 <template>
-    <TheProfile />
+    <TheStats />
 
 </template>
 
 <script setup>
-import TheProfile from "../components/TheProfile.vue";
+import TheStats from "../components/TheStats.vue";
 </script>
 
 <style scoped lang="scss">

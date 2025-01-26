@@ -1,17 +1,17 @@
 <template>
-    <form @submit.prevent="handleSubmit" class="drink-form">
+    <form @submit.prevent="submitDrink" class="drink-form">
         <div class="form-group">
             <label>Название напитка:</label>
             <input
                 type="text"
-                v-model="drink.name"
+                v-model="drink.title"
                 required
                 placeholder="Введите название"
                 class="form-input"
             />
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label>Тип напитка:</label>
             <multiselect
                 v-model="drink.group"
@@ -22,19 +22,19 @@
                 placeholder="Выберите тип"
                 required
             />
-        </div>
+        </div> -->
 
         <div class="form-group">
             <label>Напиток:</label>
             <multiselect
-                v-model="drink.ingredient"
+                v-model="drink.type"
                 :options="ingredientOptions"
                 group-values="items"
                 group-label="name"
                 :group-select="false"
                 placeholder="Выберите ингредиент"
                 label="name"
-                track-by="id"
+                track-by="name"
                 required
             >
                 <template slot="singleLabel" slot-scope="{ option }">
@@ -52,12 +52,13 @@ import { ref, computed } from "vue";
 import Multiselect from "vue-multiselect";
 import { useAppStore } from "@/stores/app";
 
-const { ingredients, ingredients_group } = useAppStore();
+const { ingredients, ingredients_group, addDrinkToBar } = useAppStore();
+
+const group = ref({ name: "all" })
 
 const drink = ref({
-    name: "",
-    group: { name: "all" },
-    ingredient: null,
+    title: "",
+    type: null
 });
 
 // Опции для групп
@@ -69,9 +70,9 @@ const groupOptions = computed(() => [
 // Опции для ингредиентов с группировкой
 const ingredientOptions = computed(() => {
     const filtered =
-        drink.value.group.name === "all"
+        group.value.name === "all"
             ? ingredients
-            : ingredients.filter((i) => i.group === drink.value.group.name);
+            : ingredients.filter((i) => i.group === group.value.name);
 
     const groups = filtered.reduce((acc, item) => {
         const group = item.group;
@@ -86,21 +87,14 @@ const ingredientOptions = computed(() => {
     }));
 });
 
-const emit = defineEmits(["submit"]);
+const submitDrink = async () => {
+    try {
+        console.log(drink.value);
 
-const handleSubmit = () => {
-    emit("submit", {
-        name: drink.value.name,
-        group: drink.value.group.name,
-        ingredient: drink.value.ingredient,
-    });
-
-    // Сброс формы
-    drink.value = {
-        name: "",
-        group: { name: "all" },
-        ingredient: null,
-    };
+        await addDrinkToBar(drink.value);
+    } catch (error) {
+        console.error("Ошибка добавления:", error);
+    }
 };
 </script>
 
@@ -114,13 +108,16 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #374151;
+    color: var(--tg-theme-text-color);
 }
 
 .form-input {
     width: 100%;
     padding: 0.5rem 0.75rem;
+    border-radius: 5px;
     border: 1px solid #d1d5db;
+    background: #fff;
+    color: #212121;
     border-radius: 0.375rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -156,17 +153,8 @@ label {
 }
 
 :deep(.multiselect) {
-    .multiselect__tags {
-        @apply border-gray-300 rounded-lg;
-        min-height: 42px;
-    }
-
-    .multiselect__option--group {
-        @apply bg-gray-100 text-gray-700 font-semibold;
-    }
-
-    .multiselect__option--highlight {
-        @apply bg-blue-500 text-white;
+    .multiselect__input, .multiselect__single {
+        color: #212121;
     }
 }
 </style>

@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { RouterView } from "vue-router";
+import { useRoute, RouterView } from "vue-router";
 import TheMenu from "./components/TheMenu.vue";
 import { onMounted, ref } from "vue";
 import { useAppStore } from "@/stores/app";
@@ -22,6 +22,8 @@ import { useTelegram } from "@/services/telegram";
 
 const loaded = ref(false);
 const app = useAppStore();
+const route = useRoute()
+
 
 const { tg } = useTelegram();
 
@@ -32,7 +34,6 @@ app.init().then(() => {
 
 onMounted(() => {
     tg.ready();
-
     tg.expand();
 });
 </script>

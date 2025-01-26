@@ -6,9 +6,16 @@
                 <button @click="toggleAccordion">
                     <i class="fa-solid fa-filter"></i>
                 </button>
-                <button @click="toggleAddModal">
-                    <i class="fa-solid fa-plus"></i>
-                </button>
+                <RouterLink
+                    to="/bar/add"
+                    custom
+                    v-slot="{ isActive, navigate }"
+                >
+                    <button @click="navigate" :class="{ active: isActive }">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </RouterLink>
+               
             </div>
         </div>
 
@@ -36,28 +43,29 @@
 
     <ul class="bar-list" v-if="filteredBar.length > 0">
         <li class="bar-item" v-for="item in filteredBar" :key="item.id">
-            <div class="bar-item__name">
-                {{ item.name }}
-            </div>
-            <div class="bar-item__type">
-                {{ item.type }}
+            <img :src="item.type.image" alt="">
+            <div class="bar-item__info">
+                <div class="bar-item__name">
+                    {{ item.title }}
+                </div>
+                <div class="bar-item__type">
+                    {{ item.type.name }}
+                </div>
             </div>
         </li>
     </ul>
     <div v-else class="bar-list__empty">
         <div class="empty-text">В баре пока что ничего нет</div>
-        <button @click="toggleAddModal">Добавить в бар</button>
+        <RouterLink to="/bar/add" custom v-slot="{ isActive, navigate }">
+            <button @click="navigate" :class="{ active: isActive }">
+                Добавить в бар
+            </button>
+        </RouterLink>
     </div>
-
-    <TheModal v-model="showAddModal" title="Пополнение бара">
-        <FormAddToBar @submit="submitDrink"></FormAddToBar>
-    </TheModal>
 </template>
 
 <script setup>
 import { ref, computed } from "vue";
-import FormAddToBar from "@/components/FormAddToBar.vue";
-
 import { useAppStore } from "@/stores/app";
 const app = useAppStore();
 
@@ -80,20 +88,6 @@ const filteredBar = computed(() => {
 const FilterIsOpen = ref(false);
 const toggleAccordion = () => {
     FilterIsOpen.value = !FilterIsOpen.value;
-};
-
-const showAddModal = ref(false);
-const toggleAddModal = () => {
-    showAddModal.value = !showAddModal.value;
-};
-
-const submitDrink = async (drink) => {
-    try {
-        await app.addDrinkToBar(drink);
-        showAddModal.value = false;
-    } catch (error) {
-        console.error("Ошибка добавления:", error);
-    }
 };
 </script>
 
@@ -120,7 +114,7 @@ const submitDrink = async (drink) => {
         gap: 10px;
 
         button {
-            font-size: .9em;
+            font-size: 0.9em;
         }
     }
 }
@@ -158,7 +152,7 @@ const submitDrink = async (drink) => {
 .bar-list {
     list-style: none;
     padding: 0;
-    margin: 10px;
+    margin: 10px 0;
 
     &__empty {
         .empty-text {
@@ -173,12 +167,27 @@ const submitDrink = async (drink) => {
     }
 
     .bar-item {
-        padding: 5px 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
         &__name {
-            font-size: 20px;
+            font-size: 24px;
         }
         &__type {
-            font-size: 14px;
+            font-size: 20px;
         }
         &:not(:last-child) {
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);

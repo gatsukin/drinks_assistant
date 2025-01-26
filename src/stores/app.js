@@ -2,6 +2,11 @@ import { getOrCreateUser, fetchUserBar, sendDrinkToBar, fetchCocktails, fetchIng
 
 import { defineStore } from "pinia";
 
+import cocktailsJson from '../json/cocktails.json'
+import ingredientsJson from '../json/ingredients.json'
+import ingredientsGroupJson from '../json/ingredients_group.json'
+
+
 export const useAppStore = defineStore("app", {
     state: () => ({
         user: {},
@@ -9,13 +14,13 @@ export const useAppStore = defineStore("app", {
         bar: [],
         bar_lenght_db: 0,
 
-        cocktails: [],
-        cocktails_lenght_db: 0,
+        cocktails: cocktailsJson,
+        cocktails_lenght_db: cocktailsJson.length,
 
-        ingredients: [],
-        ingredients_lenght_db: 0,
+        ingredients: ingredientsJson,
+        ingredients_lenght_db: ingredientsJson.length,
 
-        ingredients_group: []
+        ingredients_group: ingredientsGroupJson
     }),
     actions: {
         async init() {
@@ -23,23 +28,27 @@ export const useAppStore = defineStore("app", {
 
             let barData = await fetchUserBar();
             if(barData) {
+                console.log(barData);
+                
                 this.bar = barData
                 this.bar_lenght_db = barData.length
             }
 
-            let cocktailsData = await fetchCocktails();
-            if (cocktailsData) {
-                this.cocktails = cocktailsData;
-                this.cocktails_lenght_db = cocktailsData.length
-            }
+            // FROM DATABASE DATA
+            
+            // let cocktailsData = await fetchCocktails();
+            // if (cocktailsData) {
+            //     this.cocktails = cocktailsData;
+            //     this.cocktails_lenght_db = cocktailsData.length
+            // }
 
-            let ingredientsData = await fetchIngredients();
-            if(ingredientsData) {
-                this.ingredients = ingredientsData
-                this.ingredients_lenght_db = ingredientsData.length
-            }
+            // let ingredientsData = await fetchIngredients();
+            // if(ingredientsData) {
+            //     this.ingredients = ingredientsData
+            //     this.ingredients_lenght_db = ingredientsData.length
+            // }
 
-            this.ingredients_group = await fetchIngredientsGroup();
+            // this.ingredients_group = await fetchIngredientsGroup();
         },
         async addDrinkToBar(drink) {
             let newDrink = await sendDrinkToBar(drink);

@@ -12,7 +12,6 @@ export async function getOrCreateUser() {
         .eq("telegram", MY_ID);
 
     if (pontentialUser.data.length !== 0) {
-        console.log(pontentialUser.data[0]);
         return pontentialUser.data[0];
     }
 

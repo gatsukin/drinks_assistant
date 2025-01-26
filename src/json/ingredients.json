@@ -1,0 +1,2932 @@
+[
+    {
+        "name": "Водка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1/1659077196-%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0_%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Лондонский сухой джин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/799/1644320719-%D0%B4%D0%B6%D0%B8%D0%BD_%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0_2.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Белый ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/88/1730535564-cubana_icon.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Серебряная текила",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/93/1658166877-Olmeca_silver_tequila-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Коньяк",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/40/1690805034-HENNESSY-Very-Special_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Российский виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/37/1658741159-%D1%88%D0%BE%D1%82%D0%BB%D0%B0%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B8%CC%86_%D0%B2%D0%B8%D1%81%D0%BA%D0%B8_%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Бурбон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/62/1711698354-old_virginia_original_icon.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Абсент",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/113/1644319639-%D0%B0%D0%B1%D1%81%D0%B5%D0%BD%D1%82_%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Золотая текила",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/381/1658166778-olmeca_reposado-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Темный ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/86/1586504525-dark-rum_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Золотой ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/89/1586504555-gold-rum_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Кальвадос",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/92/calvados-boulard-grand-solage-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Самбука классическая",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/666/1559121522-Sambuca-200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Выдержанный ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/101/1586504601-extra-aged-rum_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Мескаль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/143/mescal-wahaka-espadin-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Цитрусовая водка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/661/1659077311-%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0_%D1%86%D0%B8%D1%82%D1%80%D0%BE%D0%BD.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Грейпфрутовая водка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/663/1659077292-%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0_%D0%B3%D1%80%D0%B5%D0%B8%CC%86%D0%BF%D1%84%D1%80%D1%83%D1%82.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Ирландский виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/662/1549963247-irish_whiskey_kilbeggan-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Сверхкрепкий ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/365/1586504648-overproof-rum_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Женевер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/244/1583848802-BOLS-genever_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Черносмородиновая водка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/387/1659077258-%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0_%D1%81%D0%BC%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Писко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/98/pisco-oro-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Ржаной виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/272/1587384491-WOODFORD-RYE-WHISKEY_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Пряный ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/389/1727336823-diablo_negro_rum_icon-.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Кашаса",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/39/cachaca-leblon-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Выдержанный бурбон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/132/1711698459-old_virginia_6yo_BD_icon.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Яблочный бурбон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/787/1673618611-apple.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Медовый бурбон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/788/1711698421-old_virginia_smooth_honey_icon.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Вишневый бурбон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/789/1673618598-cherry.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Японский виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/250/Japanese-Whisky-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Выдержанный коньяк",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/678/1690805154-HENNESSY-XO_200%D1%85200_21.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Кокосовый ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/919/1586504492-coconut-rum_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Граппа",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/882/Grappa-200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Малиновая водка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/385/1659077234-%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0_%D0%BC%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Дабл рай виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/323/High-West-double-rye-whiskey-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Арак Батавия",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/321/Batavia-Arrack-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Выдержанный чистый виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/249/midleton_barry_crocket_single-pot-whiskey-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Аквавит",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/155/aquavit-preview.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Ананасовый ром",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/849/1586504667-pineapple-rum_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Сельдереевый джин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/850/Root-celery-gin-200_200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Грушевый бренди",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/964/1538073123-Pear-brandy-200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Соджу",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/940/1535621130-Soju-200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Кокосовая водка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/944/1550076624-Coconut-vodka-200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Американский виски",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1035/1587462853-Jack-Daniels_200%D1%85200.jpg",
+        "group": "Крепкий алкоголь"
+    },
+    {
+        "name": "Односолодовый виски с острова Айла",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/287/1629464685-Ardbeg_icon.jpg",
+        "group": "Сингл молты"
+    },
+    {
+        "name": "Односолодовый виски из Хайленда",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/125/Maccalan-preview1.jpg",
+        "group": "Сингл молты"
+    },
+    {
+        "name": "Красный вермут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/36/1559121890-Red-vermouth-200%D1%85200.jpg",
+        "group": "Вермуты"
+    },
+    {
+        "name": "Сухой вермут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/35/1559121799-Dry-vermouth-200%D1%85200.jpg",
+        "group": "Вермуты"
+    },
+    {
+        "name": "Белый вермут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/318/1559121705-White-vermouth-200%D1%85200.jpg",
+        "group": "Вермуты"
+    },
+    {
+        "name": "Розовый вермут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/430/1559214160-rose-vermouth-preview.jpg",
+        "group": "Вермуты"
+    },
+    {
+        "name": "Трипл сек",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/54/1659078630-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D1%82%D1%80%D0%B8%D0%BF%D0%BB_%D1%81%D0%B5%D0%BA_1.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Красный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/47/1659369274-martini_bitter_icon.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Кофейный ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/55/1659077811-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BA%D0%BE%D1%84%D0%B5.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер мараскино",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/665/1659078269-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BC%D0%B0%D1%80%D0%B0%D1%81%D0%BA%D0%B8%D0%BD%D0%BE.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Айриш крим",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/394/1619163057-Country-Lane-NEW-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер Драй Оранж",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/130/1619162427-De-Kuyper-Dry-Orange-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Амаро",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/166/Amaro-montenegro-200_200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Дынный ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/397/1659077488-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B4%D1%8B%D0%BD%D1%8F.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Персиковый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/399/1659078312-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA_2.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Кокосовый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/407/1659078243-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BA%D0%BE%D0%BA%D0%BE%D1%81_1.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Абрикосовый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/396/1659078370-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%BE%D1%81.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер амаретто",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/395/1659078124-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B0%D0%BC%D0%B0%D1%80%D0%B5%D1%82%D1%82%D0%BE.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Черносмородиновый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/111/1659078603-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D1%87%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D0%BC%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Мятный ликер зеленый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/61/1659078424-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BC%D1%8F%D1%82%D0%B0_%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B8%CC%86.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Лимончелло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/402/Luxardo-Limoncello-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер Блю Кюрасао",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/398/1659078391-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B1%D0%BB%D1%8E_%D0%BA%D1%8E%D1%80%D0%B0%D1%81%D0%B0%D0%BE.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Вишневый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/46/1659078038-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B2%D0%B8%D1%88%D0%BD%D1%8F.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ревеневый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/284/1619162912-De-Kuyper-Sour-Rhubarb-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Зеленый шартрез",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/124/chartreuse-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Бенедиктин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/104/Benedictine-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Драмбуи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/100/Drambuie-200_200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Какао ликер коричневый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/116/1659078577-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BA%D0%B0%D0%BA%D0%B0%D0%BE_%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B8%CC%86_2.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Яблочный ликер зеленый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/405/1659078516-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D1%8F%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE_%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B8%CC%86.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Какао ликер светлый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/60/1659078449-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BA%D0%B0%D0%BA%D0%B0%D0%BE_%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B8%CC%86.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Грейпфрутовый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/409/1659078492-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B3%D1%80%D0%B5%D0%B8%CC%86%D0%BF%D1%84%D1%80%D1%83%D1%82_1.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Бехеровка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/380/Becherovka-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер из цветков бузины",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/427/1619160719-De-Kuyper-Elderflower-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер личи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/410/1659077377-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BB%D0%B8%D1%87%D0%B8.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер корицы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/408/Liqueur-Bols-Gold-Strike-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер манго",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/411/1659077409-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BC%D0%B0%D0%BD%D0%B3%D0%BE.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Маурин квина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/825/Maurin-Quina-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Яичный ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/414/1659077429-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D1%8F%D0%B8%D1%87%D0%BD%D1%8B%D0%B8%CC%86.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Саке",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/565/Sake-hakutsuru-junmai-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер фалернум",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/112/Falernum-bitter-truth-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Апероль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/122/1659368420-Aperol-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ежевичный ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/415/1659078213-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B5%D0%B6%D0%B8%D0%B2%D0%B8%D0%BA%D0%B0.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Гальяно Л’Аутентико",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/403/Liqueur-Galliano-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Фернет бранка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/821/1533393670-Fernet-branca-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер маракуйи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/412/1659078157-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BC%D0%B0%D1%80%D0%B0%D0%BA%D1%83%D0%B8%CC%86%D1%8F.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер пименто драм",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/208/The-Bitter-Truth-Pimento-Dram-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Чинар",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/358/cynar-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Гентиана",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/822/Gentiana-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Банановый ликер желтый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/406/1659078543-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%B1%D0%B0%D0%BD%D0%B0%D0%BD_%D0%B6%D0%B5%D0%BB%D1%82%D1%8B%D0%B8%CC%86.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Южный комфорт",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/423/Liqueur-Southern-Comfort-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Яблочный ликер желтый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/419/Liqueur-Schoenauer-Apple-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ромашковый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/203/distilleria-santa-teresa-marolo-milla-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Стрега",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/172/strega--preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ореховый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/848/1619171933-Hazelnut-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Терновый джин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/667/1644319785-%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D1%8B%D0%B8%CC%86_%D0%B4%D0%B6%D0%B8%D0%BD_%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Малиновый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/424/1659078185-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BC%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Мирто",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/910/1530249415-Mirto-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер голубики",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/421/1619161804-De-Kuyper-Blueberry-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Италикус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/856/Italicus-200_200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Пастис",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/325/pernod-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Мастиха",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/818/Mastiha-image.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Клубничный ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/420/1659078337-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BA%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D0%BA%D0%B0.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Фиалковый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/48/1619160646-De-Kuyper-Parfait-Amour-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Пикон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/827/Picon-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Дюбонне",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/241/dubonnet-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер перца анчо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/776/ancho-chile-liqueur-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер 43",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/156/licor-43-liqueur-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Мятный ликер светлый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/106/1619162583-De-Kuyper-Cre%CC%80me-de-Menthe-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Медовый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/934/1659077787-%D0%BB%D0%B8%D0%BA%D0%B5%D1%80_%D0%BC%D0%B5%D0%B4.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Эликсир д'Анверс",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/350/Elixir-D_Anvers-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер юдзу",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/902/1528407230-Yudzy-liqueur-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер цветущей вишни",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/251/cherry-blossom-liqueur-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Егермейстер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/312/Jagermeister-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Банановый ликер зеленый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/429/1619162513-De-Kuyper-Pisang-200%D1%85200.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Цвак Уникум",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/376/unicum-zwack-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Грушевый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/174/1618308482-Mathilde_Pear_liqueur-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Женевер с маракуйей",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/129/genever-passion-fruit-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Ликер вербены",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/131/Verveine_Velay_Verte-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Мандариновый ликер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/425/Liqueur-Mandarine-Napolean-preview.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Цитрусовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1040/1695545297-icon_tundra_bitter_orange.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Мятный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1041/1695545453-icon_tundra_bitter_mint.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Пряный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1044/1722354354-%D1%82%D1%83%D0%BD%D0%B4%D1%80%D0%B0-%D1%85%D0%BE%D1%82_icon.png.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Вишнево-мятный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1043/1722354200-%D1%82%D1%83%D0%BD%D0%B4%D1%80%D0%B0-%D0%B1%D0%B8%D1%82%D1%82%D0%B5%D1%80-%D0%A7%D0%B5%D1%80%D1%80%D0%B8_icon.png",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Биттер де Шамбери",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1045/1722354612-%D0%91%D0%B8%D1%82%D1%82%D0%B5%D1%80-%D0%B4%D0%B5-%D0%A8%D0%B0%D0%BC%D0%B1%D0%B5%D1%80%D0%B8_icon.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Травяной биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1039/1695545003-icon_tundra_bitter.jpg",
+        "group": "Ликеры и биттеры"
+    },
+    {
+        "name": "Просекко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/258/1732803268-simple+bruni_icon.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Красное вино сухое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/432/dry-red-wine-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Херес Педро Хименес",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/288/pedro-ximenez-sherry-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Портвейн Тони",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/82/tawny-porto-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Херес Фино",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/435/lustau-Puerto-Fino-preview2.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Белое вино сухое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/433/dry-white-wine-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Херес Олоросо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/332/oloroso-sherry-preview2.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Херес Амонтильядо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/296/Amontillado-sherry-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Лилле Блан",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/710/lillet-blanc-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Херес Манзанилья",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/268/Manzanilla-sherry-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Сливовое вино",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/436/plum-wine-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Белое вино десертное",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/846/sauternes-200_200.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Лилле Руж",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/256/Lillet-Rouge-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Сладкий херес блендовый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/359/sweet-blended-sherry-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Портвейн ЛБВ",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/274/lbv-porto-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Портвейн Руби",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/797/taylors-fine-ruby-port-200_200.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Мадера",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/824/Madeira-wine-preview.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Портвейн Бранко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/960/1537470818-Porto-Branco-200%D1%85200.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Клубничный Умешу",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1050/1722363407-%D0%BA%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B8%CC%86-%D1%83%D0%BC%D0%B5%D1%88%D1%83_icon.jpg",
+        "group": "Вина"
+    },
+    {
+        "name": "Светлое пиво",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/437/light-beer-preview.jpg",
+        "group": "Пиво и сидр"
+    },
+    {
+        "name": "Яблочный сидр",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/439/Apple-Cider-preview.jpg",
+        "group": "Пиво и сидр"
+    },
+    {
+        "name": "Темное пиво",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/438/1543570734-Black_Albert_Royal_stout-preview.jpg",
+        "group": "Пиво и сидр"
+    },
+    {
+        "name": "Стаут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/356/1543570721-dark-beer-preview.jpg",
+        "group": "Пиво и сидр"
+    },
+    {
+        "name": "Эль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/790/ale-preview.jpg",
+        "group": "Пиво и сидр"
+    },
+    {
+        "name": "Пшеничное пиво",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1032/1551344622-Wheat-beer-200%D1%85200.jpg",
+        "group": "Пиво и сидр"
+    },
+    {
+        "name": "Ангостура биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/63/Angostura_bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Апельсиновый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/85/Regans_Orange_Bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Пишо биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/114/Peychauds-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Грейпфрутовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/303/fee_brothers_grapefruit-bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Персиковый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/440/The-Bitter-Truth-Peach-Bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Домашний кардамоновый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/758/homemafde-cardamom-bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Лавандовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/230/scrappy_bitters-lavender-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Ревеневый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/242/revenevy_bitter-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Домашний цитрусовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/829/Homemade-citrus-bitter-200_200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Сельдереевый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/442/Scrappy-Bitters-celery-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Лимонный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/493/lemon-bitters-bitter-truth-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Шоколадный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/815/Chocolate-bitter-image.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Чайный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/206/Teapot_bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Грецкий биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/885/Walnuts-bitter-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Сливовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/443/Fee-Brothers-Plum-Bitter-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Эбботтс биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/299/bobs-abbotts-bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Фенхелевый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/933/1535084323-Fennel-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Виски биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/842/Whisky-Barrel-Bitter-200_200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Бергамот биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/273/bergamot_bitter-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Биттер из лопуха",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/175/burdock-bitters-adam-elmegirab-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Гвоздичный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/441/Master-of-Malt-Bitter-Clove-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Шартрез биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/853/Chartreuse-Elixir-Vegetal-200_200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Домашний мускатный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/884/Homemade-nutmeg-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Дэд Рэббит Ориноко биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/246/orinoco-bitters-large-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Травяной цитрусовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/340/CitrusBitters_Urban-Moonshine-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Домашний биттер Милано",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/233/homemade-milano-bitters-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Кленовый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/254/klenovy-bitter_Urban-Moonshine-preview.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Лакричный биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/971/1538642941-Liquorice-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Гентиана биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/978/1539890035-Gentian-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Умами биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/982/1539934751-Umami-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Биттер Афродита",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/813/Aphrodite_bitters-image.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Вишневый биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/943/1536230062-Suius-cherry-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Джерри Томас биттер",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/942/1536229913-Jerry-Thomas-bitters-200%D1%85200.jpg",
+        "group": "Ароматические горечи"
+    },
+    {
+        "name": "Сахарный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/295/1562833766-Simple_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Медовый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/133/1562833131-Honey_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Гренадин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/77/1562833011-Grenadine_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп маракуйи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/75/1562833504-Passion_Fruit_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Ванильный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/121/1562834051-Vanilla_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп агавы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/446/1562832486-Agava_syrup-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Миндальный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/99/1562832522-Almond_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп корицы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/445/1562832867-Cinnamon_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Малиновый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/43/1562833654-Raspberry_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Кленовый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/134/1562833437-Maple_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Карамельный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/447/1562832718-Caramel_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Имбирный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/450/1562832942-Ginger_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Клубничный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/448/1562833943-Strawberry_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Черносмородиновый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/452/1562832559-Black_currant__syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп розы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/123/1562833688-Rose_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Яблочный сироп желтый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/453/1562834124-Yellow_Apple_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Кокосовый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/196/1562832904-Coconut_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп лимонника",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/454/1562833216-Lemongrass_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп манго",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/463/1562833398-Mango_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Пряный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/461/1563104408-Spice_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп личи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/462/1562833323-Lychee_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Мандариновый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/451/1562833977-Tangerine_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Шоколадный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/455/1562832830-Chocolate_syrup_-_Icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Лаймовый кордиал",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/179/1562833249-Lime_Syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Яблочный сироп зеленый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/464/1562832976-Green_Apple_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Фисташковый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/480/1562833571-Pistachio_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Ежевичный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/755/1563104450-Blackberry_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп лаванды",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/478/1562833183-Lavender_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Персиковый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/469/1562833537-Peach_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп соленая карамель",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/806/1562833721-Salted_Caramel_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп фундука",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/471/1562833061-Hazelnut_syrop_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Ананасовый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/855/1566238378-Pineapple_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Арбузный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/456/1562834087-Watermelon_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Банановый сироп желтый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/465/1562834157-Yellow_Banana_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Вишневый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/466/1562832754-Cherry_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп трипл сек",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/807/1562834015-Triple_Sec_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Ирисковый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/468/1562832682-Butterscotch_syrup_-_Icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп макадамии",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/479/1562833363-Macadamia_Nut_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Грейпфрутовый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/475/1566308754-Grapefruit_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп шоколадное печенье",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/800/1562832791-Chocolate_chip_cookie_dough_syrup_-_Icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп гибискуса",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/739/1562833097-Hibiscus_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Инжирный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/229/1566309390-Balsamic_fig_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп мятный мохито",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/803/1562833471-Mojito_Mint_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Кофейный сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/974/1566239617-Coffee_Syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп пряная тыква",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/986/1562833619-Pumpkin_Spice_syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Сироп маршмэллоу",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/991/1566237678-Marshmallow_Syrup_-_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Айвовый сироп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1049/1722363307-%D0%A1%D0%B8%D1%80%D0%BE%D0%BF-%D0%B0%D0%B8%CC%86%D0%B2%D0%B0_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Домашний сироп тимьяна",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1046/1722354778-thyme_icon.jpg",
+        "group": "Сиропы"
+    },
+    {
+        "name": "Лимонный сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/9/Lemon_juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Лаймовый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/176/Lime_juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Апельсиновый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/8/Frobishers-Orange-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Яблочный сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/482/Frobishers-Apple-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Клюквенный сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/481/Frobishers-Cranberry-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Грейпфрутовый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/189/Frobishers-Grapefruit-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Ананасовый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/7/Frobishers-pineapple-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Томатный сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/10/frobishers-tomato-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Вишневый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/483/Frobishers-Cherry-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Гранатовый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/484/frobishers-Pomegranate-Juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Персиковый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/485/Peach-Juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок манго",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/486/Frobishers-Mango-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок маракуйи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/257/Passion-fruit-Juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Мандариновый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/341/mandarin-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок личи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/290/Lichee-Juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Морковный сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/716/carrot-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Арбузный сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/487/watermelon-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок папайи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/263/Papaya-Juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Облепиховый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/757/sandhtorn-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок алоэ",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/489/Aloe-juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок из лимонов гриль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/353/lemon_juice-preview.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок кешью",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/894/1528098815-Cashew-juice-200%D1%85200.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Домашний газированный фруктовый сок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1025/1575638417-Homemade_soda_Fruity_-_icon.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок квашеной капусты",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/987/1540495534-Sauerkraut-juice-200%D1%85200.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок черники",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1038/1695544523-%D1%81%D0%BE%D0%BA_%D1%87%D0%B5%D1%80%D0%BD%D0%B8%D0%BA%D0%B8_icon.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Сок белого винограда",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1051/1722363486-%D0%92%D0%B8%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%BE%D0%BA_icon.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Ягодный морс",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1042/1695728891-%D1%8F%D0%B3%D0%BE%D0%B4%D0%BD%D1%8B%D0%B8%CC%86_%D0%BC%D0%BE%D1%80%D1%81_icon.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Верджус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/998/1542969424-Verjuice-200%D1%85200.jpg",
+        "group": "Соки"
+    },
+    {
+        "name": "Содовая",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/34/1596442484-4_200%D1%85200.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Имбирное пиво",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/212/ginger-beer-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Спрайт",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/490/Sprite-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Вода без газа",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/79/still-water-voss-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Тоник",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/492/tonic-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Кола",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/94/Coca-Cola-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Энергетик",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/494/red-bull-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Биттер лемон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/763/bitter-lemon-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Холодный зеленый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/495/iced-tea-green-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Кокосовая вода",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/660/Coconut-Water-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Холодный персиковый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/496/iced-tea-peach-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Лимонад дюшес",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/497/duchess-preview.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Грейпфрутовая газировка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/881/Grapefruit-soda-200%D1%85200.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Розовый лимонад",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/857/Rose-lemonade-200_200.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Байкал",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/795/Baikal-200_200.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Ананасовая газировка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/901/1528407072-Pineapple-soda-200%D1%85200.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Тархун",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/796/______-200_200.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Домашняя содовая на сыворотке с бананом",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1008/1575638523-Homemade_soda_Whey___Banana_-_icon.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Вишневая газировка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1037/1695544310-%D0%B2%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%B0%D1%8F_%D0%B3%D0%B0%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_icon.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Домашняя \"смертельная\" содовая",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1030/1575638484-Homemade_soda_De_la_muerte_-_icon.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Домашний холодный шоколад",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1004/1575638584-Homemade_brew_Chocolate_-_icon.jpg",
+        "group": "Вода и напитки"
+    },
+    {
+        "name": "Кофе эспрессо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/670/Espresso-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Черный чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/499/Black-Tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Кофе в зернах",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/500/Coffee-beans-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Кофе американо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/91/coffee-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Чай эрл грей",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/502/Earl-Grey-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Жасминовый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/503/jasmine-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Ромашковый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/504/Chamomile-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Копченый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/506/Smoked-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Чай ассам",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/505/Assam-Tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Какао-порошок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/501/Cacao-powder-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Молотый кофе",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/751/grated-coffee-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Чай лотосовый улун",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/292/oolong-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Маття",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/900/1528406937-Matcha-200%D1%85200.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Липовый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/509/linden-tea-preview2.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Чай дянь хун",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/512/Dianhong-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Сухие цветки для чая",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/349/clever-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Ромашковый чай в пакетиках",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/760/Chamomile-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Чай сенча",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/169/preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Зеленый чай листовой",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/773/green-tea-leaf-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Черный чай листовой",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/759/Black-Tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Вересковый чай",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/507/Heather-tea-preview.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Кофе терпентинный",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/946/1536855521-Menengic_coffee_200x200.jpg",
+        "group": "Чай и кофе"
+    },
+    {
+        "name": "Белок перепелиного яйца",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/767/egg-white-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Жирные сливки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/128/heavy-cream-anchor-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Молоко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/107/Anchor-Milk-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Желток перепелиного яйца",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/49/egg-yolk-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Нежирные сливки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/16/Low-fat-cream-anchor-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Взбитые сливки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/515/Whippedcream-highres-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Ванильное мороженое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/514/Vanilla-Ice-cream-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сыр маскарпоне",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/520/Mascarpone-Cheese-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Пармезан",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/845/Parmigiano-200_200.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Малиновое мороженое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/728/Raspberry-ice-cream-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Кокосовое мороженое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/862/Coconut-ice-cream-200%D1%85200.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Лаймовый сорбет",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/525/Lime-Sorbet-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сливочное масло соленое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/523/Salted-Butter-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сгущенное молоко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/518/Condensed-Milk-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Апельсиновый сорбет",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/521/Orange-Sorbet-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Шоколадное мороженое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/727/Chocolate-Ice-cream-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Яблочный сорбет",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/527/Apple-Sorbet-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Кефир",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/893/1527149917-Kefir-200%D1%85200.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сливочный сыр",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/526/cream-cheese-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Клубничное мороженое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/725/Ice-cream-Strawberry-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Ежевичное мороженое",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/724/BlackBerry-Ice-cream-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сыр Па де Руж",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/338/Cheese-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сыр Салерс",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/781/preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Перепелиное яйцо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/771/quail-egg-preview.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Сливочное масло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/517/Butter-highres-preview3.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Йогурт",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/966/1538073479-Yogurt-200%D1%85200.jpg",
+        "group": "Молочные продукты и яйца"
+    },
+    {
+        "name": "Малиновое пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/713/1562581236-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Клубничное пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/126/1562581189-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Персиковое пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/148/1562581039-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Пюре личи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/714/1562581317-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Банановое пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/736/1563105015-Banana_puree-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Кокосовое пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/634/1562581090-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Мандариновое пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/659/1562581143-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Ананасовое пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/743/1563107165-Pineapple_puree-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Пюре голубики",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/731/1562581704-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Пюре красной смородины",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/730/1562581439-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Яблочное пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/952/1562580897-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Дынное пюре",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1048/1722363218-%D0%B4%D1%8B%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BF%D1%8E%D1%80%D0%B5_icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Пюре манго",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/958/1562580975-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Пюре маракуйи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/959/1562580933-icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Пюре кактуса",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1047/1722354912-%D0%BF%D1%8E%D1%80%D0%B5-%D0%BA%D0%B0%D0%BA%D1%82%D1%83%D1%81_icon.jpg",
+        "group": "Пюре"
+    },
+    {
+        "name": "Лайм",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/5/lime-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Апельсин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/4/orange-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Яблоко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/528/Green-Apple-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Лимон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/3/lemon-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Грейпфрут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/190/grapefruit_preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Ананас",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/95/pineapple-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Маракуйя",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/529/Passionfruit-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Мандарин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/530/Tangerine-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Манго",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/533/Mango-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Гранат",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/531/Pomegranate-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Киви",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/532/Kiwi-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Кумкват",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/537/Kumquat-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Банан",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/200/banana-preview1.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Личи",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/536/Llychee-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Груша",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/534/Pear-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Карамбола",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/749/carambola-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Персик",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/535/Peach-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Инжир",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/213/inzhir_preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Консервированный персик",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/641/Canned-peach-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Авокадо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/539/Avocado-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Фейхоа",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/540/Feijoa-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Питайя",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/754/dragon_fruit-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Терн",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/545/Blackthorn-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Гуава",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/543/Guava-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Абрикос",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/541/Apricot-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Консервированный ананас",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/642/Canned-pineapple-preview.jpg",
+        "group": "Фрукты"
+    },
+    {
+        "name": "Малина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/152/raspberry-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Клубника",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/546/Strawberry-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Ежевика",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/214/blackberry-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Черника",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/547/blueberry_preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Клюква",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/549/Cranberriy-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Красная смородина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/552/red_currant-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Вишня",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/556/Cherry-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Зеленый виноград",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/550/Green-grapes-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Арбуз",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/548/Watermelon-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Физалис",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/538/Physalis-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Черная смородина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/551/Blackcurrant-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Брусника",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/557/Cowberry-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Дыня",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/553/Melon-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Красный виноград",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/562/Red-Grapes-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Свежемороженая вишня",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/554/Frozen-cherries-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Облепиха",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/555/Sea-buckthorn-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Свежемороженая малина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/559/Frozen-raspberries-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Черешня",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/560/Sweet-cherry-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Свежемороженая клубника",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/563/Frozen-strawberries-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Калина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/558/Viburnum-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Шиповник",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/564/Briar-preview.jpg",
+        "group": "Ягоды"
+    },
+    {
+        "name": "Огурец",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/217/cucucmber-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Перец чили",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/567/Chili-pepper-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Сельдерей",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/569/Celery-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Соленый огурец",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/572/Pickles-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Редька",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/574/Radish-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Стручковый перец сладкий",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/571/Red-pepper-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Ревень",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/570/Rhubarb-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Корень фенхеля",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/573/Fennel-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Батат",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/921/1531988218-Sweet-potato-200%D1%85200.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Томат черри",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/777/cherry-tomato-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Халапеньо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/575/Jalapeno-preview.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Кукуруза",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/954/1537457154-Corn-200%D1%85200.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Стручки гороха",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1012/1544182230-Peas-in-pod-200%D1%85200.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Картофель",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1013/1544182755-Potato-200%D1%85200.jpg",
+        "group": "Овощи"
+    },
+    {
+        "name": "Мята",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/672/mint-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Розмарин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/576/Rosemary-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Зеленый базилик",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/224/preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Ананасовые листья",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/118/Ananas-Leaf-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Лимонная трава",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/578/Llemongrass-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Лепестки роз",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/201/preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Красный базилик",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/577/Basil-red-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Цветы фиалки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/245/fialka-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Лаймовые листья",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/579/Lime-leaves-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Тимьян",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/586/Thyme-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Орхидея",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/304/orchid_preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Кориандр",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/676/Coriander-leaves-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Щавель",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/580/Sorrel-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Шалфей",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/202/preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Эстрагон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/581/Tarragon-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Ростки гороха с приправами",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/369/pear_sprouts_preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Лаванда",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/226/preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Руккола",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/585/Arugula-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Цветы ромашки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/285/tsvetki-romashki-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Гибискус в сиропе",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/582/Hibiscus-syrup-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Сычуаньский бутон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/164/Szechuan_Bud-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Шисо",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/774/shiso-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Укроп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/907/1530248911-Dill-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Пшеничный колос",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/828/Ear-of-wheat-200_200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Цветок карнивора",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/142/Carnivorous-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Листья кукурузы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/895/1528099008-Corn-leaf-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Каперсы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/587/Capers-preview.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Оливковые листья",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/947/1536855646-Olive_leaves_200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Полынь",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/983/1539935149-Wormwood-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Листья лотоса",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/980/1539892541-Lotus-leaf-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Качим",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/970/1538642692-Gypsophila-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Синеголовник",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1011/1544181955-Mexican-coriander-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Солерос",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1014/1544183085-Samphire-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Хризантема",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/935/1535618993-Chrysanthemum-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Цветы яблони",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1001/1544174810-Apple-Blossom-200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Орегано",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/996/1542968859-Oregano_200%D1%85200.jpg",
+        "group": "Растения"
+    },
+    {
+        "name": "Мед",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/589/Honey-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Апельсиновый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/590/Orange-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Вишневый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/592/Cherry-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Малиновый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/597/Raspberry-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Облепиховый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/673/Sea-buckthorn-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Абрикосовый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/593/Apricot-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Черносмородиновый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/674/Blackcurrrant-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Домашний ягодный чатни",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/141/previw-chatni.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Инжирный джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/675/Fig-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Лавандовый мед",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/931/1533881394-Lavender-honey-200%D1%85200.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Голубичный джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/601/Blueberry-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Клубничный джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/596/Strawberry-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Клюквенный джем с портвейном",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/289/preciew-jam.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Мачилусовый мед",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/291/Machilus_Flower-preview2.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Медовые соты",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/817/Honeycombs-image.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Кумкватовый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/914/1530861756-Kumquat-Jam-200%D1%85200.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Крыжовниковый джем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/603/Gooseberry-Jam-preview.jpg",
+        "group": "Мёд и джемы"
+    },
+    {
+        "name": "Табаско соус красный",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/42/tabasco-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Ворчестер соус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/41/american_garden_worcestershire_sauce-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Трюфельное масло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/612/Black-Truffle-oil-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Красный винный уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/607/Red-Wine-vinegar-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Устричный соус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/608/Oyster-Sauce-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Шоколадный соус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/801/1562675102-icon.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Бальзамический крем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/605/Balsamic-cream-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Соевый соус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/609/Soy-sauce-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Табаско соус зеленый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/606/Tabasco-green-preview2.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Кунжутное масло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/911/1530249518-Sesame-oil-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Карамельный соус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/809/1563112947-Caramel_sauce_-_icon.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Яблочный уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/932/1535084218-Apple-cider-vinegar-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашнее овощное масло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/873/Homemade_vegetable_oil_200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашнее цитрусовое масло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/888/1526987581-homemade-citrus-oleo-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашнее шоколадное масло",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/784/homemade-chocolate-oil-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Настойка с ароматом барбекю",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/362/bbq-tincture-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Тамариндовый соус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/611/Tamarind-sauce-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Миндальная паста",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/812/Almond-butter-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашний яблочно-ревеневый кетчуп",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/928/1533814185-Homemade-apple-_-rhubarb-ketchup-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Бальзамический уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/153/balsamic-vinegar-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Белый винный уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/847/White_vinegar-200_200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Ванильный крем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/820/Vanilla-custard-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашняя соленая кокосовая карамель",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/819/Salted-coconut-caramel-200_200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Горчица Тирентьен",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/336/mustard_tyerentyen-preview.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашняя копченая олия",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1022/1544716797-Homemade-smoked-oleo-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Арахисовая паста",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1023/1544716950-Peanut-butter-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Медовый уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1009/1544181068-Honey-vinegar-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашний вишневый уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1003/1544176506-Homemade-cherry-vinegar-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Томатный микс",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/969/1538642537-Evil-mix-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Масло какао",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/988/1541136090-Cocoa-butter-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Домашнее виноградное масло с укропом",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1019/1544716231-Homemade-grapeseed-oil-with-dill-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Мандариновый уксус",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1010/1544181541-Mandarine-vinegar-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Мирин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1031/1551344224-Mirin-200%D1%85200.jpg",
+        "group": "Соусы и масло"
+    },
+    {
+        "name": "Корица в палочках",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/330/cinnamon-stick-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Корень имбиря",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/566/Ginger-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Гвоздика",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/613/Cloves--preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Соль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/127/salt-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Молотая корица",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/120/cinnamon-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Сахарный песок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/115/sugar-sand-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Мускатный орех молотый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/14/nutmeg-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Сахарная пудра",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/102/saharnaja_pudra-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Черный перец молотый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/56/ground-black-pepper-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Тростниковый сахарный песок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/327/trostnikovy-sahar-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Тростниковый сахар в кубиках",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/103/preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Кардамон",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/223/cardamom-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Бадьян",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/149/badyan-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Ванильный сахарный песок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/615/Vanilla-sugar-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Ваниль в стручках",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/614/Vanilla-pods--preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Сахар в кубиках",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/150/White_sugar_in_cubes-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Шафран",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/621/Saffron-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Сельдереевая соль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/15/celery_salt-preview2.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Красный перец молотый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/619/Ground-Red-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Хрен",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/620/Horseradish-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Розовая соль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/348/rose_salt-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Кокосовая стружка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/624/Coconut-shavings-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Кунжут",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/625/Sesame--preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Китайский перец в гранулах",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/622/sichuan-pepercorn-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Розовый перец",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/887/pink-pepper-200-%D1%85-200.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Чипотле",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/886/Chipotle-200%D1%85200.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Черная соль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/843/Black-salt-200_200.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Семена фенхеля",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/628/Fennel-seeds-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Молотый имбирь",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/617/Ground-ginger-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Перец горошком",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/618/Black-Peppercorn-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Корень корейского красного женьшеня",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/839/Red-ginseng-200_200.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Копченая соль",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/756/baked-salt-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Тамаринд",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/629/Tamarind-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Китайский перец молотый",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/623/Chinese-pepper-preview.jpg",
+        "group": "Специи и пряности"
+    },
+    {
+        "name": "Курага",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/191/kuraga_preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Чернослив",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/639/Prunes-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Грецкий орех",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/645/Walnut-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Сушеный ананас",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/852/Dried-pineapple-200_200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Овощные чипсы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/851/Veggie-chips-200_200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Жареный арахис",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/643/Roasted-peanuts-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Фисташки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/876/Pistachios_200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Засахаренный имбирь",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/207/sugared_ginger-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Сушеная малина",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/922/1532620538-Dried-raspberry-200%D1%85200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Засахаренный кумкват",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/916/1530862044-Sugared-Kumquat-200%D1%85200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Сушеный финик",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/644/dried-dates-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Сушеный инжир",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/276/susheny-inzhir-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Кокос",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/640/Coconut-preview.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Изюм",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/999/1543566901-Raisin-200%D1%85200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Пекан",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/997/1542969268-Pecan-200%D1%85200.jpg",
+        "group": "Орехи и сухофрукты"
+    },
+    {
+        "name": "Черный шоколад",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/646/Dark-chocolate-preview.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Мармелад",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/748/marmalade-preview.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Карамельный попкорн",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/808/Caramel-popcorn-image.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Леденцы",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/658/Candy-highres-preview.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Стружка с ароматом шоколада",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/352/wood-chips-preview.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Рахат-лукум",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/764/turkish-delight-preview.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Маршмэллоу",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/860/Marshmallow-200_200.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Пахлава",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/866/baklava-200%D1%85200.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Сахарная вата",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/1016/1544715334-Cotton-candy-200%D1%85200.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Белый шоколад",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/993/1541136811-White-chocolate-200%D1%85200.jpg",
+        "group": "Сладости"
+    },
+    {
+        "name": "Печенье",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/652/Cookies-preview.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Тарталетка",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/747/tartaletka-preview.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Вафельный рожок",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/864/Ice-cream-cone-200%D1%85200.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Пита",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/875/Peeta_bread_200.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Орео",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/804/Oreo-preview.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Пшеничный хлеб",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/841/Wheat-bread-200_200.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Имбирный пряник",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/651/gingerbread-preview.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Бисквит",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/379/Biscuit-preview.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Вафля",
+        "image": "https://ru.inshaker.com/uploads/good/icon_ru/994/1541679528-Waffle-200%D1%85200.jpg",
+        "group": "Выпечка"
+    },
+    {
+        "name": "Кокосовый крем",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/631/Cream-of-coconut-preview.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Кокосовое молоко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/516/Coconut-milk-highres-preview.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Лецитин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/638/Lecithin-preview.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Желатин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/637/Gelatin-slice-preview.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Женьшень в капсулах",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/170/JenShen-preview.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Яблочная кислота",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/904/1529006714-Malic-acid-200%D1%85200.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Бамбуковый уголь измельченный",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/976/1539268489-Bamboo-powder-200%D1%85200.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Соевая мука",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/965/1538073345-Soy-flour-200%D1%85200.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Молочная кислота",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/992/1541136620-Milk-acid-200%D1%85200.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Банановое молоко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1036/1695544088-%D0%B1%D0%B0%D0%BD%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE_icon.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Пудра гибискуса",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/1000/1543567297-Hibiscus-Powder-200%D1%85200.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Миндальное молоко",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/984/1540494549-Almond-milk-200%D1%85200.jpg",
+        "group": "Добавки"
+    },
+    {
+        "name": "Апельсиновая цедра",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/732/orenage-zest-prevoew.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Коктейльная вишня красная",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/20/preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Лимонная цедра",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/734/lemon-zest-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Грейпфрутовая цедра",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/735/grapefruit-zest-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Лаймовая цедра",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/733/lime-zest-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Пищевое сусальное золото",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/372/Edible-Gold-Leaf-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Оливки",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/32/preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Чайная пена",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/833/Earl-grey-foam-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Чайная икра",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/832/Earl-grey-caviar-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Маринованный лук",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/917/1531379369-Cocktail-onion-200%D1%85200.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Вишня гриотин",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/752/Cherry-griotin-preview.jpg",
+        "group": "Украшения"
+    },
+    {
+        "name": "Вяленое мясо c медом акации",
+        "image": "https://ru.inshaker.com/uploads/good/icon_common/298/vyalenoe-myaso-preview.jpg",
+        "group": "Украшения"
+    }
+]
