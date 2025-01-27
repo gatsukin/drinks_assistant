@@ -32,6 +32,12 @@
     --tg-theme-destructive-text-color: #e53935;
 }
 
+/* Глобальные стили */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
 * {
     margin: 0;
     padding: 0;

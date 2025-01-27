@@ -9,9 +9,9 @@
 const props = defineProps({
     filterIsOpen: {
         type: Boolean,
-        default: false
-    }
-})
+        default: false,
+    },
+});
 </script>
 <style scoped lang="scss">
 .filter {

@@ -1,7 +1,9 @@
-import "./style.css";
+
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";
+import { registerPlugins } from '@core/utils/plugins'
+
 
 import App from "./App.vue";
 import router from "./router";
@@ -14,5 +16,7 @@ app.use(createPinia());
 app.use(router);
 
 app.component("TheLoader", TheLoader);
+
+registerPlugins(app)
 
 app.mount("#app");

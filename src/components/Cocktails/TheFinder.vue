@@ -107,3 +107,11 @@ defineExpose({
     toggleFilter,
 });
 </script>
+
+<style scoped lang="scss">
+.cocktails-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+</style>
