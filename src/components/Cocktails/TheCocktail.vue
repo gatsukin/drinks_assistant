@@ -54,15 +54,13 @@ const toggleAccardion = () => {
 <style scoped lang="scss">
 .cocktail {
     margin-bottom: 25px;
-    border: 1px solid var(--tg-theme-hint-color);
+    background-color: #2c2c2c;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-
     display: flex;
     flex-direction: column;
     gap: 15px;
     &__header {
-        padding: 10px 10px 0;
+        padding: 10px 15px 0;
         h3 {
             color: var(--tg-theme-text-color);
             margin-top: 0;
@@ -92,11 +90,11 @@ const toggleAccardion = () => {
 }
 
 .ingredients {
-    padding: 15px 10px 0;
+    padding: 15px 15px 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(255,255,255,0.2);
 
     &__name {
         font-weight: 900;
@@ -127,10 +125,9 @@ const toggleAccardion = () => {
 }
 
 .recipe {
-    padding-top: 15px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(255,255,255,0.2);
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
 
     h4 {

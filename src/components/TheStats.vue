@@ -1,5 +1,4 @@
 <template>
-    <div class="name">Статистика</div>
     <div class="stats">
         <div class="stats__block">
             <div class="stats__block--name">Имя пользователя</div>
@@ -29,17 +28,7 @@ const {user,bar_lenght_db, cocktails_lenght_db, ingredients_lenght_db} = useAppS
 </script>
 
 <style scoped lang="scss">
-.profile {
-    background-color: #2c2c2c;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-.name {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
 
 .stats {
     background-color: #2c2c2c;
@@ -48,6 +37,7 @@ const {user,bar_lenght_db, cocktails_lenght_db, ingredients_lenght_db} = useAppS
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 20px auto;
 
     &__block {
         width: 100%;

@@ -60,6 +60,20 @@ export async function sendDrinkToBar(drink) {
         console.error("Error adding drink:", error);
     }
 }
+export async function deleteDrinkFromBar(drinkId) {
+    try {
+        const { data, error } = await supabase
+        .from('user_drinks')
+        .delete()
+        .eq('id', drinkId)
+
+        if (error) throw error;
+
+        return data;
+    } catch (error) {
+        console.error("Error adding drink:", error);
+    }
+}
 export async function fetchCocktails() {
     try {
         const { data, error } = await supabase.from("cocktails").select("*");

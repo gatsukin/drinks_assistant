@@ -1,16 +1,23 @@
-import { getOrCreateUser, fetchUserBar, sendDrinkToBar, fetchCocktails, fetchIngredients, fetchIngredientsGroup } from "@/api/app";
+import {
+    getOrCreateUser,
+    fetchUserBar,
+    sendDrinkToBar,
+    fetchCocktails,
+    fetchIngredients,
+    fetchIngredientsGroup,
+    deleteDrinkFromBar,
+} from "@/api/app";
 
 import { defineStore } from "pinia";
 
-import cocktailsJson from '../json/cocktails.json'
-import ingredientsJson from '../json/ingredients.json'
-import ingredientsGroupJson from '../json/ingredients_group.json'
-
+import cocktailsJson from "../json/cocktails.json";
+import ingredientsJson from "../json/ingredients.json";
+import ingredientsGroupJson from "../json/ingredients_group.json";
 
 export const useAppStore = defineStore("app", {
     state: () => ({
         user: {},
-        
+
         bar: [],
         bar_lenght_db: 0,
 
@@ -20,22 +27,20 @@ export const useAppStore = defineStore("app", {
         ingredients: ingredientsJson,
         ingredients_lenght_db: ingredientsJson.length,
 
-        ingredients_group: ingredientsGroupJson
+        ingredients_group: ingredientsGroupJson,
     }),
     actions: {
         async init() {
             this.user = await getOrCreateUser();
 
             let barData = await fetchUserBar();
-            if(barData) {
-                console.log(barData);
-                
-                this.bar = barData
-                this.bar_lenght_db = barData.length
+            if (barData) {
+                this.bar = barData;
+                this.bar_lenght_db = barData.length;
             }
 
             // FROM DATABASE DATA
-            
+
             // let cocktailsData = await fetchCocktails();
             // if (cocktailsData) {
             //     this.cocktails = cocktailsData;
@@ -54,6 +59,16 @@ export const useAppStore = defineStore("app", {
             let newDrink = await sendDrinkToBar(drink);
             this.bar.push(newDrink);
             return newDrink;
+        },
+        async deleteDrink(id) {
+            let res = await deleteDrinkFromBar(id);
+            // Находим индекс элемента, который нужно удалить
+            const indexToRemove = this.bar.findIndex((item) => item.id === id);
+
+            // Если элемент найден, удаляем его
+            if (indexToRemove !== -1) {
+                this.bar.splice(indexToRemove, 1);
+            }
         },
     },
 });

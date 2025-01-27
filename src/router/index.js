@@ -12,21 +12,33 @@ const router = createRouter({
             path: "/",
             name: "cocktails",
             component: Cocktails,
+            meta: {
+                headerName: 'Коктейли'
+            }
         },
         {
             path: "/bar",
             name: "bar",
             component: MyBar,
+            meta: {
+                headerName: 'Бар'
+            }
         },
         {
             path: "/bar/add",
             name: "add-bar",
             component: AddMyBar,
+            meta: {
+                headerName: 'Добавить напиток в бар'
+            }
         },
         {
             path: "/status",
             name: "status",
             component: Status,
+            meta: {
+                headerName: 'Статистика'
+            }
         },
     ],
 });

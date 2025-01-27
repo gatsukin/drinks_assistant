@@ -1,12 +1,7 @@
 <template>
-    <div class="bar-header--row">
-        <div class="bar-header__pagename">Бар</div>
-        <div class="btn-wrap">
-            <button >
-                <i class="fa-solid fa-filter"></i>
-            </button>
-        </div>
-    </div>
+    <TheFilter :filterIsOpen="filterIsOpen">
+        <FilterFields></FilterFields>
+    </TheFilter>
     <div class="cocktails-list">
         <div v-if="availableCocktails.length === 0" class="empty">
             Нет доступных коктейлей
@@ -22,9 +17,12 @@
 </template>
 
 <script setup>
+import { ref, computed } from "vue";
+
 import TheCocktail from "./TheCocktail.vue";
-import { computed } from "vue";
-import excludeIngredients from "../json/exclude_ingredients.json";
+import FilterFields from "./FilterFields.vue";
+import TheFilter from "../TheFilter.vue";
+import excludeIngredients from "../../json/exclude_ingredients.json";
 const props = defineProps({
     bar: {
         type: Array,
@@ -55,6 +53,14 @@ const availableCocktails = computed(() => {
         });
     });
 });
+
+const filterIsOpen = ref(false);
+const toggleFilter = () => {
+    filterIsOpen.value = !filterIsOpen.value;
+};
+defineExpose({
+  toggleFilter
+})
 </script>
 
 <style scoped lang="scss">
