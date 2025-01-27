@@ -40,7 +40,7 @@ const props = defineProps({
         z-index: -1;
         opacity: 0;
         &.open {
-            padding: 5px 0px;
+            padding: 5px 0px 15px;
             max-height: 80vh;
             opacity: 1;
             z-index: 1000;

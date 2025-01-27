@@ -22,6 +22,7 @@ const router = useRoute();
     padding-bottom: 10px;
     position: sticky;
     top: 0;
+    z-index: 1000000;
     &--row {
         display: flex;
         flex-direction: row;

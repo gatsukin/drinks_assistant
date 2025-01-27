@@ -15,7 +15,8 @@
                 placeholder="Select one"
                 :options="field.options"
                 :searchable="false"
-                :append-to-body="true"
+                @select="updateFilters"
+                @remove="updateFilters"
             >
                 <template v-slot:singleLabel="{ option }">
                     {{ option.name }}
@@ -25,7 +26,8 @@
                 type="text"
                 v-if="field.type === 'text'"
                 v-model="search[field.key]"
-                placeholder="Select one"
+                placeholder="Название"
+                 @input="updateFilters"
             />
         </div>
     </div>
@@ -34,6 +36,8 @@
 <script setup>
 import { ref } from "vue";
 import Multiselect from "vue-multiselect";
+
+const emit = defineEmits(["update-filters"]);
 
 import strength_list from "../../json/cocktail_filter_strength_list.json";
 import taste_list from "../../json/cocktail_filter_taste_list.json";
@@ -87,6 +91,11 @@ const search_field_setup = [
         options: series_list,
     },
 ];
+
+// Отправляем данные фильтров в родительский компонент
+const updateFilters = () => {
+    emit("update-filters", search.value);
+};
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
@@ -113,6 +122,11 @@ const search_field_setup = [
             font-size: 14px;
             width: 100%;
             color: #212121;
+
+            &::placeholder {
+                opacity: 1;
+                color: #212121;
+            }
         }
     }
     :deep(.multiselect) {

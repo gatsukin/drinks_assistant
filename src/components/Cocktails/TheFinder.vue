@@ -1,14 +1,14 @@
 <template>
     <TheFilter :filterIsOpen="filterIsOpen">
-        <FilterFields></FilterFields>
+        <FilterFields @update-filters="handleFiltersUpdate"></FilterFields>
     </TheFilter>
     <div class="cocktails-list">
-        <div v-if="availableCocktails.length === 0" class="empty">
+        <div v-if="filteredCocktails.length === 0" class="empty">
             Нет доступных коктейлей
         </div>
 
         <TheCocktail
-            v-for="cocktail in availableCocktails"
+            v-for="cocktail in filteredCocktails"
             :key="cocktail.name"
             :cocktail="cocktail"
             :excludeIngredients="excludeIngredients"
@@ -23,6 +23,7 @@ import TheCocktail from "./TheCocktail.vue";
 import FilterFields from "./FilterFields.vue";
 import TheFilter from "../TheFilter.vue";
 import excludeIngredients from "../../json/exclude_ingredients.json";
+
 const props = defineProps({
     bar: {
         type: Array,
@@ -39,65 +40,70 @@ const props = defineProps({
     },
 });
 
-const availableCocktails = computed(() => {
-    // Получаем список доступных ингредиентов
+const filterIsOpen = ref(false);
+const toggleFilter = () => {
+    filterIsOpen.value = !filterIsOpen.value;
+};
+
+// Состояние фильтров
+const filters = ref({
+    name: "",
+    strength: { name: "Любые", value: "любые" },
+    taste: { name: "Любые", value: "любые" },
+    base: { name: "Любые", value: "любые" },
+    group: { name: "Любые", value: "любые" },
+    series: { name: "Любые", value: "любые" },
+});
+
+// Обработчик обновления фильтров
+const handleFiltersUpdate = (updatedFilters) => {
+    filters.value = updatedFilters;
+};
+
+// Фильтрация коктейлей
+const filteredCocktails = computed(() => {
     const available = props.bar.map((item) => item.type.name);
 
     return props.cocktails.filter((cocktail) => {
-        return cocktail.ingredients.every((ingredient) => {
+        // Фильтр по ингредиентам
+        const hasIngredients = cocktail.ingredients.every((ingredient) => {
             const normalized = ingredient;
             return (
                 excludeIngredients.includes(normalized) ||
                 available.includes(normalized)
             );
         });
+
+        // Фильтр по имени
+        const matchesName = cocktail.name
+            .toLowerCase()
+            .includes(filters.value.name.toLowerCase());
+
+        // Фильтр по всем параметрам (strength, taste, base, group, series)
+        const matchesFilters = Object.entries(filters.value).every(
+            ([key, value]) => {
+                if (key === "name") return true; // Имя уже проверено
+
+                // Если выбрано "Любые" — пропускаем фильтр
+                if (value.value === "любые") return true;
+
+                // Проверяем, есть ли значение фильтра в taste или других массивах
+                // Например, для strength проверяем cocktail.strength (если отдельное поле)
+                // ИЛИ cocktail.taste (если все в одном массиве)
+
+                // Предположим, что все параметры хранятся в cocktail.taste:
+                return cocktail.taste.includes(value.value);
+
+                // Если у каждого параметра свой массив (например, cocktail.strength):
+                // return cocktail[key]?.includes(value.value);
+            }
+        );
+
+        return hasIngredients && matchesName && matchesFilters;
     });
 });
 
-const filterIsOpen = ref(false);
-const toggleFilter = () => {
-    filterIsOpen.value = !filterIsOpen.value;
-};
 defineExpose({
-  toggleFilter
-})
+    toggleFilter,
+});
 </script>
-
-<style scoped lang="scss">
-.cocktails-list {
-    max-width: 800px;
-    margin: 20px auto;
-}
-.bar-header {
-    background-color: var(--tg-theme-bg-color);
-    padding-bottom: 10px;
-    position: sticky;
-    top: 0;
-    &--row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        .btn-wrap {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-
-            button {
-                font-size: 0.9em;
-            }
-        }
-    }
-    &__pagename {
-        font-size: 24px;
-        font-weight: 700;
-    }
-}
-.empty {
-    text-align: center;
-    color: #718096;
-    padding: 40px 20px;
-    font-size: 1.1em;
-}
-</style>

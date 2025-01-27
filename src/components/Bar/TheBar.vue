@@ -1,23 +1,10 @@
 <template>
     <TheFilter :filterIsOpen="filterIsOpen">
-        <div class="bar-switcher">
-                <label
-                    class="bar-switcher__btn"
-                    v-for="(item, i) in switchArray"
-                    :key="i"
-                >
-                    <input
-                        type="radio"
-                        name="type_alcohol"
-                        :value="item.value"
-                        v-model="switchValue"
-                        hidden
-                    />
-                    <span>{{ item.name }}</span>
-                </label>
-            </div>
+        <div class="filter-form-group">
+            <label>Название</label>
+            <input type="text" v-model="filterName" placeholder="Название" />
+        </div>
     </TheFilter>
-
 
     <ul class="bar-list" v-if="filteredBar.length > 0">
         <li class="bar-item" v-for="item in filteredBar" :key="item.id">
@@ -55,19 +42,19 @@ const { bar, deleteDrink } = useAppStore();
 
 import TheFilter from "../TheFilter.vue";
 
-const switchValue = ref("all");
-const switchArray = [
-    { name: "Все", value: "all" },
-    { name: "Алкоголь", value: "alcohol" },
-    { name: "Безалкогольное", value: "none" },
-];
+const filterName = ref("");
 
 const filteredBar = computed(() => {
+    if (!filterName.value) return bar; // Если поиск пустой, показываем всё
+
+    const searchQuery = filterName.value.toLowerCase();
+
     return bar.filter((item) => {
-        if (switchValue.value === "all") return true;
-        if (switchValue.value === "none") return !item.isAlcoholic;
-        if (switchValue.value === "alcohol") return item.isAlcoholic;
-        return true;
+        const titleMatch = item.title.toLowerCase().includes(searchQuery);
+        const typeNameMatch = item.type.name
+            .toLowerCase()
+            .includes(searchQuery);
+        return titleMatch || typeNameMatch;
     });
 });
 
@@ -81,39 +68,33 @@ const deleteDrinkAction = async (id) => {
 };
 
 defineExpose({
-  toggleFilter
-})
+    toggleFilter,
+});
 </script>
 
 <style scoped lang="scss">
-.bar-switcher {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 15px;
-    &__btn {
+.filter-form-group {
+    label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: flex;
+    }
+    input {
+        display: flex;
+        min-height: 40px;
+        display: block;
+        padding: 0 40px 0 13px;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        font-size: 14px;
         width: 100%;
-        cursor: pointer;
+        color: #212121;
 
-        span {
-            display: flex;
-            justify-content: center;
-            font-size: 16px;
-            padding: 5px 10px;
-            font-weight: 500;
-            font-family: inherit;
-            background-color: var(--tg-theme-button-color);
-            color: var(--tg-theme-button-text-color);
-            width: 100%;
-            border-radius: 8px;
-            border: 2px solid transparent;
-            transition: 0.25s;
-        }
-
-        input:checked + span {
-            border-color: var(--tg-theme-button-text-color) !important;
+        &::placeholder {
+            opacity: 1;
+            color: #212121;
         }
     }
 }
@@ -170,5 +151,4 @@ defineExpose({
         }
     }
 }
-
 </style>
