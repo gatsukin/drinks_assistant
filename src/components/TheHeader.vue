@@ -22,6 +22,8 @@ const router = useRoute();
     top: 0;
     z-index: 100;
     margin-bottom: 10px;
+    background: rgb(var(--v-theme-background));
+    
     &--row {
         display: flex;
         flex-direction: row;

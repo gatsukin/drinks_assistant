@@ -41,6 +41,7 @@ defineEmits(['toggleFilter']);
     z-index: 100000 !important;
     // width: 100% !important;
     padding: 10px 10px;
+    padding-top: calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top) + 10px);
 }
 .filter {
     &-header {
