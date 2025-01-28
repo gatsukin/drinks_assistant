@@ -1,15 +1,15 @@
 <template>
-    <VApp>
-        <!-- <main v-if="loaded" class="page">
+    <main v-if="loaded">
+        <div class="page">
             <div class="page-content">
                 <RouterView />
             </div>
-            <TheMenu />
-        </main>
-        <main v-else class="loader">
-            <TheLoader />
-        </main> -->
-    </VApp>
+        </div>
+        <TheMenu />
+    </main>
+    <main v-else class="loader">
+        <TheLoader />
+    </main>
 </template>
 
 <script setup>
@@ -22,9 +22,11 @@ import { useTelegram } from "@/services/telegram";
 
 const loaded = ref(false);
 const app = useAppStore();
-const route = useRoute();
+const route = useRoute()
+
 
 const { tg } = useTelegram();
+
 
 app.init().then(() => {
     loaded.value = true;
@@ -40,7 +42,6 @@ onMounted(() => {
 .page {
     height: 100%;
     overflow: hidden;
-    position: relative;
     padding: 10px 0 0;
 
     .page-content {
