@@ -1,25 +1,41 @@
 <template>
     <VCard class="nav">
         <RouterLink to="/" custom v-slot="{ isActive, navigate }">
-            <button @click="navigate" :class="{ active: isActive }">
+            <VBtn
+                color="secondary"
+                variant="plain"
+                @click="navigate"
+                :class="{ active: isActive }"
+            >
                 <VIcon :size="iconSize" icon="ri-goblet-line" />
-            </button>
+            </VBtn>
         </RouterLink>
         <RouterLink to="/bar" custom v-slot="{ isActive, navigate }">
-            <button @click="navigate" :class="{ active: isActive }">
+            <VBtn
+                color="secondary"
+                variant="plain"
+                @click="navigate"
+                :class="{ active: isActive }"
+            >
                 <VIcon :size="iconSize" icon="ri-instance-line" />
-            </button>
+            </VBtn>
         </RouterLink>
         <RouterLink to="/status" custom v-slot="{ isActive, navigate }">
-            <button @click="navigate" :class="{ active: isActive }">
+            <VBtn
+                color="secondary"
+                variant="plain"
+                @click="navigate"
+                :class="{ active: isActive }"
+            >
                 <VIcon :size="iconSize" icon="ri-bar-chart-fill" />
-            </button>
+            </VBtn>
         </RouterLink>
     </VCard>
 </template>
 
 <script setup>
 import { RouterLink } from "vue-router";
+const iconSize = 25
 </script>
 
 <style scoped lang="scss">
@@ -32,12 +48,12 @@ import { RouterLink } from "vue-router";
     width: calc(100% - 20px);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     overflow: hidden;
     border-radius: 10px;
 }
-button {
-    width: 100%;
+button.v-btn {
+    width: calc(100% / 3);
     height: 100%;
     display: flex;
     align-items: center;

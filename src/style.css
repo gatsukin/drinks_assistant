@@ -51,9 +51,7 @@ body {
 }
 
 body {
-    /* Отключает нативный overscroll */
     overscroll-behavior: none;
-    /* Фикс для мобильных устройств */
     position: fixed;
     top: 0;
     left: 0;
@@ -77,4 +75,9 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+#app .v-application__wrap {
+    height: 100%;
+    min-height: auto;
 }

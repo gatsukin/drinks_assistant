@@ -1,11 +1,11 @@
 <template>
-    <button @click="$emit('toggleFilter')">
-        <i class="fa-solid fa-filter"></i>
-    </button>
+     <VBtn @click="$emit('toggleFilter')">
+        <VIcon :size="20" icon="ri-filter-line" />
+    </VBtn>
     <RouterLink to="/bar/add" custom v-slot="{ isActive, navigate }">
-        <button @click="navigate" :class="{ active: isActive }">
-            <i class="fa-solid fa-plus"></i>
-        </button>
+        <VBtn @click="navigate" :class="{ active: isActive }">
+            <VIcon :size="20" icon="ri-add-line" />
+        </VBtn>
     </RouterLink>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-     <button @click="$emit('toggleFilter')">
-        <i class="fa-solid fa-filter"></i>
-    </button>
+     <VBtn @click="$emit('toggleFilter')">
+        <VIcon :size="20" icon="ri-filter-line" />
+    </VBtn>
 </template>

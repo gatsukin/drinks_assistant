@@ -6,8 +6,12 @@
         </div>
     </TheFilter>
 
-    <ul class="bar-list" v-if="filteredBar.length > 0">
-        <li class="bar-item" v-for="item in filteredBar" :key="item.id">
+    <div class="bar-list" v-if="filteredBar.length > 0">
+        <VCard
+            v-for="item in filteredBar"
+            :key="item.id"
+            class="d-flex bar-item"
+        >
             <img :src="item.type.image" alt="" />
             <div class="bar-item__info">
                 <div class="bar-item__type">
@@ -17,20 +21,18 @@
                     {{ item.title }}
                 </div>
             </div>
-            <button
-                class="bar-item__delete"
-                @click="deleteDrinkAction(item.id)"
-            >
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </li>
-    </ul>
+            <VBtn variant="outlined" color="error" class="bar-item__delete">
+                <VIcon :size="16" icon="ri-delete-bin-line" />
+            </VBtn>
+        </VCard>
+    </div>
+
     <div v-else class="bar-list__empty">
         <div class="empty-text">В баре пока что ничего нет</div>
         <RouterLink to="/bar/add" custom v-slot="{ isActive, navigate }">
-            <button @click="navigate" :class="{ active: isActive }">
+            <VBtn @click="navigate" :class="{ active: isActive }">
                 Добавить в бар
-            </button>
+            </VBtn>
         </RouterLink>
     </div>
 </template>
@@ -102,7 +104,9 @@ defineExpose({
     list-style: none;
     padding: 0;
     margin: 10px 0;
-
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     &__empty {
         .empty-text {
             font-size: 24px;
@@ -116,7 +120,6 @@ defineExpose({
     }
 
     .bar-item {
-        padding: 10px 0;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -124,30 +127,26 @@ defineExpose({
         img {
             width: 80px;
             min-width: 80px;
-            height: 80px;
             overflow: hidden;
-            border-radius: 10px;
             object-fit: cover;
         }
         &__info {
             display: flex;
             flex-direction: column;
+            padding: 10px 0;
         }
         &__name {
             font-size: 16px;
+            line-height: 1.1;
             margin-top: 10px;
-            color: rgba($color: #fff, $alpha: 0.7);
         }
         &__type {
             font-size: 20px;
-            color: #fff;
+            line-height: 1.1;
         }
         &__delete {
-            margin-left: auto;
-            // width: 20px;
-        }
-        &:not(:last-child) {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin: auto 10px auto auto;
+            padding: 10px;
         }
     }
 }

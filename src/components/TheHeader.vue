@@ -3,8 +3,8 @@
         <div class="bar-header--row">
             <h3 class="text-h3">{{ router.meta.headerName }}</h3>
 
-            <div class="btn-wrap" >
-              <slot></slot>
+            <div class="btn-wrap">
+                <slot></slot>
             </div>
         </div>
     </div>
@@ -27,6 +27,12 @@ const router = useRoute();
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .text-h3 {
+        height: 50px;
+        display: flex;
+        align-items: center;
     }
 
     .btn-wrap {
