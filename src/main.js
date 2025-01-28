@@ -19,4 +19,8 @@ app.component("TheLoader", TheLoader);
 
 registerPlugins(app)
 
+import eruda from 'eruda';
+
+eruda.init();
+
 app.mount("#app");

@@ -16,10 +16,20 @@ export default function (app) {
     defaults,
     icons,
     theme: {
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
       themes,
     },
   })
+
+  const updateTheme = (isDark) => {
+    vuetify.theme.global.name.value = isDark ? 'dark' : 'light'
+  }
+
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  updateTheme(isDark)
+
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  mediaQuery.addEventListener('change', (e) => updateTheme(e.matches))
 
   app.use(vuetify)
 }
