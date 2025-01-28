@@ -49,6 +49,7 @@ body {
     height: 100%;
     overflow: hidden;
     background-color: rgb(var(--v-theme-background));
+    height: var(--tg-viewport-stable-height, 100svh);
 }
 
 body {
