@@ -49,7 +49,7 @@ body {
     height: 100%;
     overflow: hidden;
     background-color: rgb(var(--v-theme-background));
-    height: var(--tg-viewport-stable-height, 100svh);
+    height: var(--display-height);
 }
 
 body {
@@ -65,7 +65,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     width: 100svw;
-    height: var(--display-height);
+    height: 100%;
     padding-top: calc(
         var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top)
     );
