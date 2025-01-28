@@ -64,7 +64,17 @@ body {
 #app {
     max-width: 1280px;
     margin: 0 auto;
+    height: 100%;
     width: 100svw;
+    /* height: var(--display-height);
+    padding-top: calc(
+        var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top)
+    );
+    padding-bottom: 0px;
+    padding-left: var(--tg-safe-area-inset-left);
+    padding-right: var(--tg-safe-area-inset-right); */
+}
+#app .v-application {
     height: var(--display-height);
     padding-top: calc(
         var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top)
@@ -73,7 +83,8 @@ body {
     padding-left: var(--tg-safe-area-inset-left);
     padding-right: var(--tg-safe-area-inset-right);
 }
-#app .v-application, #app .v-application__wrap ,#app main {
+#app .v-application__wrap,
+#app main {
     width: 100%;
     height: 100%;
     position: relative;

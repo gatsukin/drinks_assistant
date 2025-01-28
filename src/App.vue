@@ -1,9 +1,9 @@
 <template>
     <VApp>
         <main v-if="loaded" class="page">
-                <div class="page-content">
-                    <RouterView />
-                </div>
+            <div class="page-content">
+                <RouterView />
+            </div>
             <TheMenu />
         </main>
         <main v-else class="loader">
