@@ -5,9 +5,8 @@
     -moz-osx-font-smoothing: grayscale;
 
     --display-height: calc(
-        var(--tg-viewport-stable-height, 10svh) -
-            var(--tg-safe-area-inset-top, 44px) -
-            var(--tg-safe-area-inset-bottom, 34px)
+        var(--tg-viewport-stable-height, 100%) -
+            var(--tg-safe-area-inset-top, 44px) - var(--tg-safe-area-inset-bottom, 34px)
     );
 }
 
@@ -58,7 +57,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: var(--display-height);
     bottom: 0;
 }
 
@@ -66,15 +64,16 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     width: 100svw;
-    height: 100%;
+    height: var(--display-height);
     padding-top: calc(
         var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top)
     );
+    overflow: hidden;
     padding-bottom: 0px;
     padding-left: var(--tg-safe-area-inset-left);
     padding-right: var(--tg-safe-area-inset-right);
 }
-#app .v-application {
+#app .v-application  {
     width: 100%;
     height: 100%;
     position: relative;
