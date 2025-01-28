@@ -20,12 +20,12 @@ const router = useRoute();
     padding-bottom: 10px;
     position: sticky;
     top: 0;
-    z-index: 1000000;
+    z-index: 100;
     margin-bottom: 10px;
     &--row {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: center; 
         justify-content: space-between;
     }
 

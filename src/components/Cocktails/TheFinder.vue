@@ -1,5 +1,8 @@
 <template>
-    <TheFilter :filterIsOpen="filterIsOpen">
+    <TheFilter
+        :filterIsOpen="filterIsOpen"
+        @toggleFilter="toggleFilter(false)"
+    >
         <FilterFields @update-filters="handleFiltersUpdate"></FilterFields>
     </TheFilter>
     <div class="cocktails-list">
@@ -41,7 +44,12 @@ const props = defineProps({
 });
 
 const filterIsOpen = ref(false);
-const toggleFilter = () => {
+const toggleFilter = (val) => {
+    console.log(val);
+    if (val) {
+        filterIsOpen.value = val;
+        return;
+    }
     filterIsOpen.value = !filterIsOpen.value;
 };
 

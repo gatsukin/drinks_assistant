@@ -1,9 +1,29 @@
 <template>
-    <div class="filter">
-        <div class="filter-content" :class="{ open: filterIsOpen }">
+    <v-navigation-drawer
+        :model-value="props.filterIsOpen"
+        @update:model-value="$emit('toggleFilter', $event)"
+        @click:outside="$emit('toggleFilter')"
+        width="350"
+        location="end"
+        temporary
+        class="sidebar-filter"
+    >
+        <div class="filter-header">
+            <div class="filter-header--row">
+                <h3 class="text-h3">Фильтр</h3>
+
+                <div class="btn-wrap">
+                    <VBtn @click="$emit('toggleFilter')">
+                        <VIcon :size="20" icon="ri-close-large-line" />
+                    </VBtn>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-content">
             <slot></slot>
         </div>
-    </div>
+    </v-navigation-drawer>
 </template>
 <script setup>
 const props = defineProps({
@@ -12,39 +32,52 @@ const props = defineProps({
         default: false,
     },
 });
+defineEmits(['toggleFilter']);
+
+
 </script>
 <style scoped lang="scss">
+.sidebar-filter {
+    z-index: 100000 !important;
+    // width: 100% !important;
+    padding: 10px 10px;
+}
 .filter {
-    &-item {
-        overflow: hidden;
-    }
     &-header {
-        cursor: pointer;
         display: flex;
         align-items: center;
         font-weight: 700;
         align-items: center;
-        transition: background-color 0.2s;
-        i {
-            margin-left: 10px;
+        &--row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
         }
-    }
-    &-header:hover {
+
+        .text-h3 {
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-wrap {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            button {
+                font-size: 0.9em;
+            }
+        }
     }
     &-content {
-        padding: 0;
-        max-height: 0;
-
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
-        z-index: -1;
-        opacity: 0;
-        &.open {
-            padding: 5px 0px 15px;
-            max-height: 80vh;
-            opacity: 1;
-            z-index: 1000;
-        }
+
+        padding: 5px 0px 15px;
+        max-height: 80vh;
     }
 }
 </style>

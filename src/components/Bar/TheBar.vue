@@ -1,5 +1,5 @@
 <template>
-    <TheFilter :filterIsOpen="filterIsOpen">
+    <TheFilter :filterIsOpen="filterIsOpen" @toggleFilter="toggleFilter(false)">
         <div class="filter-form-group">
             <label>Название</label>
             <input type="text" v-model="filterName" placeholder="Название" />
