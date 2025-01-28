@@ -1,6 +1,6 @@
 <template>
     <VApp>
-        <main v-if="loaded" class="page">
+        <!-- <main v-if="loaded" class="page">
             <div class="page-content">
                 <RouterView />
             </div>
@@ -8,7 +8,7 @@
         </main>
         <main v-else class="loader">
             <TheLoader />
-        </main>
+        </main> -->
     </VApp>
 </template>
 
