@@ -30,7 +30,7 @@
                     </VChip>
                 </div>
             </div>
-            <div class="d-flex mb-3">
+            <div class="d-flex">
                 <VBtn @click="isCardDetailsVisible = !isCardDetailsVisible">
                     Рецепт
                 </VBtn>
@@ -53,9 +53,9 @@
             </div>
 
             <VExpandTransition>
-                <div v-show="isCardDetailsVisible">
+                <div v-show="isCardDetailsVisible" class="pt-3">
                     <VDivider />
-                    <VCardText>
+                    <VCardText class="pb-0">
                         <ol class="recipe__step">
                             <li
                                 v-for="(step, index) in cocktail.recipe"

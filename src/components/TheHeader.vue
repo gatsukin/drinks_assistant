@@ -1,10 +1,9 @@
 <template>
     <div class="bar-header">
         <div class="bar-header--row">
-            <div class="bar-header__pagename">{{ router.meta.headerName }}</div>
+            <h3 class="text-h3">{{ router.meta.headerName }}</h3>
 
             <div class="btn-wrap" >
-
               <slot></slot>
             </div>
         </div>
@@ -18,20 +17,16 @@ const router = useRoute();
 
 <style scoped lang="scss">
 .bar-header {
-    background-color: var(--tg-theme-bg-color);
     padding-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 1000000;
+    margin-bottom: 10px;
     &--row {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
-    &__pagename {
-        font-size: 24px;
-        font-weight: 700;
     }
 
     .btn-wrap {

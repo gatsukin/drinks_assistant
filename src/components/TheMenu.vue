@@ -1,27 +1,21 @@
 <template>
-    <nav>
+    <VCard class="nav">
         <RouterLink to="/" custom v-slot="{ isActive, navigate }">
             <button @click="navigate" :class="{ active: isActive }">
-                <i class="menu-button fa fa-martini-glass-citrus" aria-hidden="true"></i>
+                <VIcon :size="iconSize" icon="ri-goblet-line" />
             </button>
         </RouterLink>
         <RouterLink to="/bar" custom v-slot="{ isActive, navigate }">
             <button @click="navigate" :class="{ active: isActive }">
-                <i
-                    class="menu-button fa fa-box"
-                    aria-hidden="true"
-                ></i>
+                <VIcon :size="iconSize" icon="ri-instance-line" />
             </button>
         </RouterLink>
         <RouterLink to="/status" custom v-slot="{ isActive, navigate }">
             <button @click="navigate" :class="{ active: isActive }">
-                <i
-                    class="menu-button fa fa-chart-simple"
-                    aria-hidden="true"
-                ></i>
+                <VIcon :size="iconSize" icon="ri-bar-chart-fill" />
             </button>
         </RouterLink>
-    </nav>
+    </VCard>
 </template>
 
 <script setup>
@@ -29,10 +23,9 @@ import { RouterLink } from "vue-router";
 </script>
 
 <style scoped lang="scss">
-nav {
+.nav {
     position: fixed;
     bottom: max(var(--tg-safe-area-inset-bottom, 34px), 20px);
-    // bottom: 10px;
     left: 10px;
     right: 10px;
     height: 50px;
@@ -50,11 +43,10 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 0;
-    transition: .25s;
-    background-color: var(--tg-theme-secondary-bg-color);
+    transition: 0.25s;
 
     &.active {
-        background-color: var(--tg-theme-button-color);
+        color: rgb(var(--v-theme-primary)) !important;
     }
 
     &:not(:last-child) {
