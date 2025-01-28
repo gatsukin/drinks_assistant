@@ -1,11 +1,9 @@
 <template>
     <VApp>
-        <main v-if="loaded">
-            <div class="page">
+        <main v-if="loaded" class="page">
                 <div class="page-content">
                     <RouterView />
                 </div>
-            </div>
             <TheMenu />
         </main>
         <main v-else class="loader">
@@ -42,6 +40,7 @@ onMounted(() => {
 .page {
     height: 100%;
     overflow: hidden;
+    position: relative;
     padding: 10px 0 0;
 
     .page-content {
