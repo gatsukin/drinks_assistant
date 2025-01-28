@@ -73,7 +73,7 @@ body {
     padding-left: var(--tg-safe-area-inset-left);
     padding-right: var(--tg-safe-area-inset-right);
 }
-#app main {
+#app .v-application, #app .v-application__wrap ,#app main {
     width: 100%;
     height: 100%;
     position: relative;
