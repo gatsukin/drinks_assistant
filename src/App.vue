@@ -1,15 +1,17 @@
 <template>
-    <main v-if="loaded">
-        <div class="page">
-            <div class="page-content">
-                <RouterView />
+    <VApp>
+        <main v-if="loaded">
+            <div class="page">
+                <div class="page-content">
+                    <RouterView />
+                </div>
             </div>
-        </div>
-        <TheMenu />
-    </main>
-    <main v-else class="loader">
-        <TheLoader />
-    </main>
+            <TheMenu />
+        </main>
+        <main v-else class="loader">
+            <TheLoader />
+        </main>
+    </VApp>
 </template>
 
 <script setup>
@@ -22,11 +24,9 @@ import { useTelegram } from "@/services/telegram";
 
 const loaded = ref(false);
 const app = useAppStore();
-const route = useRoute()
-
+const route = useRoute();
 
 const { tg } = useTelegram();
-
 
 app.init().then(() => {
     loaded.value = true;
