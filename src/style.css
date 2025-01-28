@@ -51,7 +51,8 @@ body {
     background-color: rgb(var(--v-theme-background));
     display: flex;
     flex-direction: column;
-    max-height: var(--display-height);
+    /* max-height: var(--display-height); */
+    max-height: var(--tg-viewport-stable-height, 100svh);
     position: relative;
 }
 
