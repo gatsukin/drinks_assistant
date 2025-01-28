@@ -52,15 +52,13 @@ body {
 }
 
 body {
-    /* Отключает нативный overscroll */
     overscroll-behavior: none;
-    /* Фикс для мобильных устройств */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: green;
+    background-color: rgba(95, 9, 255, 0.1);
 }
 
 #app {
@@ -68,7 +66,7 @@ body {
     margin: 0 auto;
     height: 100%;
     width: 100svw;
-    background-color: blue;
+    background-color: rgba(0, 255, 81, 0.1);
     /* height: var(--display-height);
     padding-top: calc(
         var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top)
@@ -78,14 +76,15 @@ body {
     padding-right: var(--tg-safe-area-inset-right); */
 }
 #app .v-application {
-    height: var(--display-height);
+    height: 100%;
+    /* height: var(--display-height); */
     padding-top: calc(
         var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top)
     );
     padding-bottom: 0px;
     padding-left: var(--tg-safe-area-inset-left);
     padding-right: var(--tg-safe-area-inset-right);
-    background-color: red;
+    background-color: rgba(255, 234, 0, 0.1);
 }
 #app .v-application__wrap,
 #app main {
