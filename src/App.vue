@@ -1,15 +1,13 @@
 <template>
-    <main v-if="loaded">
-        <div class="page">
+    <VApp >
+        <div class="page" v-if="loaded">
             <div class="page-content">
                 <RouterView />
             </div>
         </div>
-        <TheMenu />
-    </main>
-    <main v-else class="loader">
-        <TheLoader />
-    </main>
+        <TheMenu v-if="loaded"/>
+        <TheLoader v-if="!loaded"/>
+    </VApp>
 </template>
 
 <script setup>
