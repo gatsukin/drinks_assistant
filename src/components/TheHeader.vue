@@ -17,13 +17,14 @@ const router = useRoute();
 
 <style scoped lang="scss">
 .bar-header {
-    padding-bottom: 10px;
+    padding: 10px;
     position: sticky;
     top: 0;
     z-index: 100;
     margin-bottom: 10px;
-    background: rgb(var(--v-theme-background));
-    
+    background: rgba(var(--v-theme-background), .8);
+    backdrop-filter: blur(2px);
+    border-bottom: 1px solid var(--v-theme-background);
     &--row {
         display: flex;
         flex-direction: row;
@@ -32,7 +33,7 @@ const router = useRoute();
     }
 
     .text-h3 {
-        height: 50px;
+        height: 40px;
         display: flex;
         align-items: center;
     }

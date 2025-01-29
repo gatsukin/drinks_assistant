@@ -9,7 +9,7 @@
                     label="Ваш ID"
                     readonly
                 />
-                <VBtn @click="copyId" variant="outlined" size="x-large">
+                <VBtn @click="copyId" size="x-large">
                     <VIcon :size="18" :icon="copyIcon" />
                 </VBtn>
             </div>
@@ -25,7 +25,7 @@
                     placeholder="ID друга"
                     label="ID Друга"
                 />
-                <VBtn @click="saveFriendId" size="x-large" variant="outlined">
+                <VBtn @click="saveFriendId" size="x-large">
                     <VIcon :size="20" icon="ri-save-line" />
                 </VBtn>
                 <VBtn

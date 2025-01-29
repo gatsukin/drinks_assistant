@@ -49,6 +49,7 @@ defineEmits(['toggleFilter']);
         align-items: center;
         font-weight: 700;
         align-items: center;
+        padding: 10px 0;
         &--row {
             display: flex;
             flex-direction: row;
@@ -58,7 +59,7 @@ defineEmits(['toggleFilter']);
         }
 
         .text-h3 {
-            height: 50px;
+            height: 40px;
             display: flex;
             align-items: center;
         }
