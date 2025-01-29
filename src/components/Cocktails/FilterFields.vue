@@ -5,7 +5,7 @@
             v-for="(field, i) in search_field_setup"
             :key="i"
         >
-            <label>{{ field.label }}:</label>
+            <label v-if="field.type === 'select'">{{ field.label }}:</label>
             <multiselect
                 v-if="field.type === 'select'"
                 v-model="search[field.key]"
@@ -22,14 +22,16 @@
                     {{ option.name }}
                 </template>
             </multiselect>
-            <input
-                type="text"
+
+            <VTextField
                 v-if="field.type === 'text'"
                 v-model="search[field.key]"
                 placeholder="Название"
-                 @input="updateFilters"
+                label="Название"
             />
         </div>
+
+        <VBtn @click="clearFilter"> Очистить </VBtn>
     </div>
 </template>
 
@@ -94,6 +96,18 @@ const search_field_setup = [
 
 // Отправляем данные фильтров в родительский компонент
 const updateFilters = () => {
+    emit("update-filters", search.value);
+};
+
+const clearFilter = () => {
+    search.value = {
+        name: "",
+        strength: { name: "Любые", value: "любые" },
+        taste: { name: "Любые", value: "любые" },
+        base: { name: "Любые", value: "любые" },
+        group: { name: "Любые", value: "любые" },
+        series: { name: "Любые", value: "любые" },
+    };
     emit("update-filters", search.value);
 };
 </script>

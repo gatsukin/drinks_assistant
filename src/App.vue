@@ -40,12 +40,12 @@ onMounted(() => {
 .page {
     height: 100%;
     overflow: hidden;
-    padding: 10px 10px 60px;
+    padding: 0px 0px 55px;
 
     .page-content {
         height: 100%;
         overflow: auto;
-        padding-bottom: 60px;
+        padding: 0 10px;
     }
 }
 </style>

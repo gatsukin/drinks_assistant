@@ -1,5 +1,5 @@
 <template>
-     <VBtn @click="$emit('toggleFilter')">
+    <VBtn @click="$emit('toggleFilter')">
         <VIcon :size="20" icon="ri-filter-line" />
     </VBtn>
     <RouterLink to="/bar/add" custom v-slot="{ isActive, navigate }">
@@ -9,3 +9,6 @@
     </RouterLink>
 </template>
 
+<script setup>
+defineEmits(["toggleFilter"]);
+</script>

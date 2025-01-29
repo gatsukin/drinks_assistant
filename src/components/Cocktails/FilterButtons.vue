@@ -3,3 +3,6 @@
         <VIcon :size="20" icon="ri-filter-line" />
     </VBtn>
 </template>
+<script setup>
+defineEmits(['toggleFilter']);
+</script>

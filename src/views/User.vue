@@ -1,11 +1,11 @@
 <template>
     <TheHeader></TheHeader>
-    <TheStats></TheStats>
+    <UserPage></UserPage>
 </template>
 
 <script setup>
 import TheHeader from '../components/TheHeader.vue'
-import TheStats from "../components/TheStats.vue";
+import UserPage from "../components/UserSettings/UserPage.vue";
 </script>
 
 <style scoped lang="scss">

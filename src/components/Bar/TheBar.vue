@@ -1,9 +1,15 @@
 <template>
     <TheFilter :filterIsOpen="filterIsOpen" @toggleFilter="toggleFilter(false)">
+    <div class="bar-filter">
         <div class="filter-form-group">
-            <label>Название</label>
-            <input type="text" v-model="filterName" placeholder="Название" />
+            <VTextField
+                v-model="filterName"
+                placeholder="Название"
+                label="Название"
+            />
         </div>
+        <VBtn @click="clearFilter"> Очистить </VBtn>
+    </div>
     </TheFilter>
 
     <div class="bar-list" v-if="filteredBar.length > 0">
@@ -21,7 +27,7 @@
                     {{ item.title }}
                 </div>
             </div>
-            <VBtn variant="outlined" color="error" class="bar-item__delete">
+            <VBtn variant="outlined" color="error" class="bar-item__delete" @click="deleteDrinkAction(item.id)">
                 <VIcon :size="16" icon="ri-delete-bin-line" />
             </VBtn>
         </VCard>
@@ -69,36 +75,20 @@ const deleteDrinkAction = async (id) => {
     await deleteDrink(id);
 };
 
+const clearFilter = () => {
+    filterName.value = ''
+}
+
 defineExpose({
     toggleFilter,
 });
 </script>
 
 <style scoped lang="scss">
-.filter-form-group {
-    label {
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        display: flex;
-    }
-    input {
-        display: flex;
-        min-height: 40px;
-        display: block;
-        padding: 0 40px 0 13px;
-        border-radius: 5px;
-        border: 1px solid #e8e8e8;
-        background: #fff;
-        font-size: 14px;
-        width: 100%;
-        color: #212121;
-
-        &::placeholder {
-            opacity: 1;
-            color: #212121;
-        }
-    }
+.bar-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .bar-list {
     list-style: none;

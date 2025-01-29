@@ -29,16 +29,16 @@ export async function getOrCreateUser() {
 
     return data[0];
 }
-export async function fetchUserBar() {
+export async function fetchUserBar(bar_id) {
     try {
         const { data, error } = await supabase
             .from("user_drinks")
             .select("*")
-            .eq("user_telegram", MY_ID);
+            .eq("user_telegram", bar_id);
 
         if (error) throw error;
 
-        console.log('✅ Bar is loaded');
+        console.log("✅ Bar is loaded");
 
         return data;
     } catch (error) {
@@ -63,9 +63,9 @@ export async function sendDrinkToBar(drink) {
 export async function deleteDrinkFromBar(drinkId) {
     try {
         const { data, error } = await supabase
-        .from('user_drinks')
-        .delete()
-        .eq('id', drinkId)
+            .from("user_drinks")
+            .delete()
+            .eq("id", drinkId);
 
         if (error) throw error;
 
@@ -78,8 +78,8 @@ export async function fetchCocktails() {
     try {
         const { data, error } = await supabase.from("cocktails").select("*");
         if (error) throw error;
-        console.log('✅ Cocktails is loaded');
-        
+        console.log("✅ Cocktails is loaded");
+
         return data;
     } catch (error) {
         console.error("Error fetching bar:", error);
@@ -89,21 +89,40 @@ export async function fetchIngredients() {
     try {
         const { data, error } = await supabase.from("ingredients").select("*");
         if (error) throw error;
-        console.log('✅ Ingredients is loaded');
+        console.log("✅ Ingredients is loaded");
 
-        return data
+        return data;
     } catch (error) {
         console.error("Error fetching bar:", error);
     }
 }
 export async function fetchIngredientsGroup() {
     try {
-        const { data, error } = await supabase.from("ingredients_group").select("*");
+        const { data, error } = await supabase
+            .from("ingredients_group")
+            .select("*");
         if (error) throw error;
 
-        console.log('✅ Ingredients Group is loaded');
+        console.log("✅ Ingredients Group is loaded");
 
-        return data
+        return data;
+    } catch (error) {
+        console.error("Error fetching bar:", error);
+    }
+}
+export async function updateBarId(bar_id) {
+    try {
+        const { data, error } = await supabase
+            .from("users")
+            .update({ bar_id: bar_id })
+            .eq("telegram", MY_ID)
+            .select();
+
+        if (error) throw error;
+
+        console.log("✅ Bar link is saved");
+
+        return data;
     } catch (error) {
         console.error("Error fetching bar:", error);
     }

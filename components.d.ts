@@ -18,6 +18,8 @@ declare module 'vue' {
     MoreBtn: typeof import('./src/@core/components/MoreBtn.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ShareBar: typeof import('./src/components/UserSettings/ShareBar.vue')['default']
+    Statistic: typeof import('./src/components/UserSettings/Statistic.vue')['default']
     TheBar: typeof import('./src/components/Bar/TheBar.vue')['default']
     TheCocktail: typeof import('./src/components/Cocktails/TheCocktail.vue')['default']
     TheFilter: typeof import('./src/components/TheFilter.vue')['default']
@@ -26,6 +28,8 @@ declare module 'vue' {
     TheLoader: typeof import('./src/components/TheLoader.vue')['default']
     TheMenu: typeof import('./src/components/TheMenu.vue')['default']
     ThemeSwitcher: typeof import('./src/@core/components/ThemeSwitcher.vue')['default']
-    TheStats: typeof import('./src/components/TheStats.vue')['default']
+    TheSettings: typeof import('./src/components/UserSettings/TheSettings.vue')['default']
+    TheStats: typeof import('./src/components/UserSettings/TheStats.vue')['default']
+    UserPage: typeof import('./src/components/UserSettings/UserPage.vue')['default']
   }
 }

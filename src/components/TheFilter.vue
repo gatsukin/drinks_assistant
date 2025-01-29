@@ -40,8 +40,8 @@ defineEmits(['toggleFilter']);
 .sidebar-filter {
     z-index: 100000 !important;
     // width: 100% !important;
-    padding: 10px 10px;
-    padding-top: calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top) + 10px);
+    padding: 10px 15px;
+    padding-top: calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top) + 0px);
 }
 .filter {
     &-header {
@@ -77,7 +77,7 @@ defineEmits(['toggleFilter']);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
 
-        padding: 5px 0px 15px;
+        padding: 15px 0px 15px;
         max-height: 80vh;
     }
 }

@@ -20,14 +20,14 @@
                 <VIcon :size="iconSize" icon="ri-instance-line" />
             </VBtn>
         </RouterLink>
-        <RouterLink to="/status" custom v-slot="{ isActive, navigate }">
+        <RouterLink to="/user" custom v-slot="{ isActive, navigate }">
             <VBtn
                 color="secondary"
                 variant="plain"
                 @click="navigate"
                 :class="{ active: isActive }"
             >
-                <VIcon :size="iconSize" icon="ri-bar-chart-fill" />
+                <VIcon :size="iconSize" icon="ri-user-line" />
             </VBtn>
         </RouterLink>
     </VCard>

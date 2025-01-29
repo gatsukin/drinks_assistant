@@ -6,6 +6,7 @@ import {
     fetchIngredients,
     fetchIngredientsGroup,
     deleteDrinkFromBar,
+    updateBarId,
 } from "@/api/app";
 
 import { defineStore } from "pinia";
@@ -33,12 +34,7 @@ export const useAppStore = defineStore("app", {
         async init() {
             this.user = await getOrCreateUser();
 
-            let barData = await fetchUserBar();
-            if (barData) {
-                this.bar = barData;
-                this.bar_lenght_db = barData.length;
-            }
-
+            this.fetchBar();
             // FROM DATABASE DATA
 
             // let cocktailsData = await fetchCocktails();
@@ -55,6 +51,17 @@ export const useAppStore = defineStore("app", {
 
             // this.ingredients_group = await fetchIngredientsGroup();
         },
+        async fetchBar() {
+            let bar_id = this.user.bar_id
+                ? this.user.bar_id
+                : this.user.telegram;
+
+            let barData = await fetchUserBar(bar_id);
+
+            this.bar = barData;
+            this.bar_lenght_db = barData.length;
+            console.log(this.bar_lenght_db);
+        },
         async addDrinkToBar(drink) {
             let newDrink = await sendDrinkToBar(drink);
             this.bar.push(newDrink);
@@ -69,6 +76,12 @@ export const useAppStore = defineStore("app", {
             if (indexToRemove !== -1) {
                 this.bar.splice(indexToRemove, 1);
             }
+        },
+        async saveFriendBar(id) {
+            this.user.bar_id = id
+            await updateBarId(id);
+            await this.fetchBar();
+            return;
         },
     },
 });
