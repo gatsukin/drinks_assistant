@@ -65,8 +65,8 @@ button.v-btn {
         color: rgb(var(--v-theme-primary)) !important;
     }
 
-    &:not(:last-child) {
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    &:not(:last-of-type) {
+        border-right: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
     }
     &:last-child {
         border-radius: 0 10px 10px 0;

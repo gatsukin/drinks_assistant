@@ -14,7 +14,7 @@
             </div>
             <div class="d-flex flex-column ga-1 my-3 ">
                 <div class="text-body-1">Состав:</div>
-                <div class="d-flex overflow-x-auto ga-1 pb-1">
+                <div class="d-flex overflow-x-auto ga-1 pb-2">
                     <VChip
                         :color="
                             resolveColorIngredient(

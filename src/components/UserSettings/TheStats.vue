@@ -51,7 +51,7 @@ const { user, bar_lenght_db, cocktails_lenght_db, ingredients_lenght_db } = stor
 .stats {
     &__block {
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

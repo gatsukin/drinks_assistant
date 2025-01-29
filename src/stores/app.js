@@ -34,7 +34,7 @@ export const useAppStore = defineStore("app", {
         async init() {
             this.user = await getOrCreateUser();
 
-            this.fetchBar();
+            await this.fetchBar();
             // FROM DATABASE DATA
 
             // let cocktailsData = await fetchCocktails();

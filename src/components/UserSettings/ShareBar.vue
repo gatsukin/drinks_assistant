@@ -9,7 +9,7 @@
                     label="Ваш ID"
                     readonly
                 />
-                <VBtn @click="copyId">
+                <VBtn @click="copyId" variant="outlined" size="x-large">
                     <VIcon :size="18" :icon="copyIcon" />
                 </VBtn>
             </div>
@@ -25,10 +25,16 @@
                     placeholder="ID друга"
                     label="ID Друга"
                 />
-                <VBtn @click="saveFriendId" >
-                    <VIcon :size="18" icon="ri-save-line" />
+                <VBtn @click="saveFriendId" size="x-large" variant="outlined">
+                    <VIcon :size="20" icon="ri-save-line" />
                 </VBtn>
-                <VBtn @click="deleteFriendId" v-if="user.bar_id">
+                <VBtn
+                    @click="deleteFriendId"
+                    v-if="user.bar_id"
+                    size="x-large"
+                    color="error"
+                    variant="outlined"
+                >
                     <VIcon :size="18" icon="ri-delete-bin-line" />
                 </VBtn>
             </div>
@@ -70,16 +76,16 @@ const copyId = async () => {
     }
 };
 
-const barId = ref(user.bar_id ? user.bar_id : '');
+const barId = ref(user.bar_id ? user.bar_id : "");
 
 const saveFriendId = async () => {
-    await saveFriendBar(barId.value)
-}
+    await saveFriendBar(barId.value);
+};
 
 const deleteFriendId = async () => {
-    barId.value = null
-    await saveFriendBar(barId.value)
-}
+    barId.value = null;
+    await saveFriendBar(barId.value);
+};
 </script>
 
 <style scoped lang="scss">
@@ -88,6 +94,10 @@ const deleteFriendId = async () => {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+
+    .v-btn {
+        padding: 0 10px;
+    }
 }
 
 .text-h4 {
