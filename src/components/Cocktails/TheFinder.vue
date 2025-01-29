@@ -1,8 +1,5 @@
 <template>
-    <TheFilter
-        :filterIsOpen="filterIsOpen"
-        @toggleFilter="toggleFilter(false)"
-    >
+    <TheFilter :filterIsOpen="filterIsOpen" @toggleFilter="toggleFilter(false)">
         <FilterFields @update-filters="handleFiltersUpdate"></FilterFields>
     </TheFilter>
     <div class="cocktails-list">
@@ -67,19 +64,46 @@ const filters = ref({
 const handleFiltersUpdate = (updatedFilters) => {
     filters.value = updatedFilters;
 };
-
 // Фильтрация коктейлей
 const filteredCocktails = computed(() => {
     const available = props.bar.map((item) => item.type.name);
-
     return props.cocktails.filter((cocktail) => {
-        // Фильтр по ингредиентам
-        const hasIngredients = cocktail.ingredients.every((ingredient) => {
-            const normalized = ingredient;
-            return (
-                excludeIngredients.includes(normalized) ||
-                available.includes(normalized)
+        // Улучшенная нормализация строк
+        function normalizeString(str) {
+            return str
+                .toLowerCase()
+                .replace(/[^а-яё\s]/g, "") // Удаляем все не-буквы и не-пробелы
+                .replace(/\s+/g, " ") // Убираем двойные пробелы
+                .trim();
+        }
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        }
+        // Функция проверки целого слова
+        function hasWholeWord(targetStr, searchWord) {
+            const normalizedTarget = normalizeString(targetStr);
+            const normalizedSearch = normalizeString(searchWord);
+
+            if (!normalizedSearch) return false;
+
+            const pattern = new RegExp(
+                `(^|\\s)${escapeRegExp(normalizedSearch)}(?=\\s|$)`,
+                "i"
             );
+            return pattern.test(normalizedTarget);
+        }
+
+        // Проверка ингредиентов
+        const hasIngredients = cocktail.ingredients.every((ingredient) => {
+            const isExcluded = excludeIngredients.some((excludeIngredient) =>
+                hasWholeWord(ingredient, excludeIngredient)
+            );
+
+            const isAvailable = available.some((availIngredient) =>
+                hasWholeWord(ingredient, availIngredient)
+            );
+
+            return isExcluded || isAvailable;
         });
 
         // Фильтр по имени
@@ -90,20 +114,9 @@ const filteredCocktails = computed(() => {
         // Фильтр по всем параметрам (strength, taste, base, group, series)
         const matchesFilters = Object.entries(filters.value).every(
             ([key, value]) => {
-                if (key === "name") return true; // Имя уже проверено
-
-                // Если выбрано "Любые" — пропускаем фильтр
+                if (key === "name") return true;
                 if (value.value === "любые") return true;
-
-                // Проверяем, есть ли значение фильтра в taste или других массивах
-                // Например, для strength проверяем cocktail.strength (если отдельное поле)
-                // ИЛИ cocktail.taste (если все в одном массиве)
-
-                // Предположим, что все параметры хранятся в cocktail.taste:
                 return cocktail.taste.includes(value.value);
-
-                // Если у каждого параметра свой массив (например, cocktail.strength):
-                // return cocktail[key]?.includes(value.value);
             }
         );
 

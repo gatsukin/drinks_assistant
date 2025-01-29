@@ -28,6 +28,7 @@
                 v-model="search[field.key]"
                 placeholder="Название"
                 label="Название"
+                @input="updateFilters"
             />
         </div>
 
