@@ -1,4 +1,4 @@
-const { Telegraf, Markup } = require('telegraf');
+import { Telegraf, Markup } from 'telegraf';
 
 const token = '7693523071:AAHxz45NAWMAdC0qiJcANGBU2sKmtfK0UlY';
 const webAppUrl = 'https://drinks-assistant.netlify.app/';
@@ -18,13 +18,11 @@ bot.command('start', async (ctx) => {
   }
 });
 
-// Обработка глобальных ошибок
 bot.catch((err, ctx) => {
   console.error(`Ошибка в обновлении ${ctx.update.update_id}:`, err);
 });
 
 bot.launch();
 
-// Корректное завершение работы
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
